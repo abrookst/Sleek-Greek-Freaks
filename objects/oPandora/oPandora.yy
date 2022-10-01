@@ -6,7 +6,7 @@
     "name": "sprPandoraStand",
     "path": "sprites/sprPandoraStand/sprPandoraStand.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
