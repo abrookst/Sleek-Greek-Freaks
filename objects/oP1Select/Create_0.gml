@@ -1,6 +1,8 @@
-/// @DnDAction : YoYo Games.Common.Set_Global
-/// @DnDVersion : 1
-/// @DnDHash : 5C573FF7
-/// @DnDArgument : "value" "1"
-/// @DnDArgument : "var" "global.selectedPlayer"
-global.selectedPlayer = 1;
+global.selectedP1 = 1;
+global.selectedP2 = 1;
+
+global.lock1 = false;
+global.lock2 = false;
+
+global.cooldown1 = 0;
+global.cooldown2 = 0;
