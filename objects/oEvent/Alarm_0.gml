@@ -3,6 +3,9 @@
 
 global.current_event = irandom(Events.total-1);
 
+//Alarm is called 
+alarm_set(0, frames*seconds);
+
 // For each event, put in the switch case
 // what should happen every 10 seconds
 switch(global.current_event){
