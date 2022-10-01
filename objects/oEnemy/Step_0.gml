@@ -7,7 +7,15 @@ attack_input = false;
 if(touchLeft or touchRight){
 	input_jump = true;
 }
-else if(oPlayer.input_dir == 0 or oPlayer.y != oEnemy.y){
+if(distance_to_object(oPlayer) < 30){
+	input_dir = -oPlayer.input_dir
+	attack_input = true;
+	sprite_index = sprWater;
+}
+else{
+	sprite_index = sprEnemy;
+}
+if(oPlayer.input_dir == 0 or oPlayer.y != oEnemy.y){
 	if(step == 5){
 		rando = random_range(0,1000)
 		if(rando < 250){
