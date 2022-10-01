@@ -5,54 +5,47 @@ input_jump = false;
 attack_input = false;
 input_down = false;
 
-<<<<<<< Updated upstream
 //if close to edge, move
-if(distance_to_object(oEdge) < 200){
-	if(input_dir = 1){
-		input_dir = -1;
-	}
-	else{
-		input_dir = 1;
-	}
-}
-//if on wall, jump in opposite direction regardless
-else if(touchLeft or touchRight){
-	input_jump = true;
-	input_dir = -input_dir;
-}
-//pick a random direction/action
-else{
-	if(step == 5){
-		rando = random_range(0,1000)
-		if(rando < 250){
-			input_dir = 1
-		}
-		else if(rando < 500){
+if(step == 25){
+	if(distance_to_object(oEdge) < 2){
+		if(input_dir = 1){
 			input_dir = -1;
 		}
-		else if(rando < 750){
-			input_jump = true;
-		}
 		else{
-			input_dir = 0;	
+			input_dir = 1;
 		}
-		step = 0
+	}
+	//if on wall, jump in opposite direction regardless
+	else if(touchLeft or touchRight){
+		input_jump = true;
+		input_dir = -input_dir;
+	}
+	//pick a random direction/action
+	else{
+			rando = random_range(0,1000)
+			if(rando < 500){
+				input_dir = 1
+			}
+			else {
+				input_dir = -1;
+			}
+			if(rando % 3 == 0){
+				input_jump = true;
+			}
+
+	}
+
+	if(distance_to_object(oPlayer) < 40){
+		attack_input = true;
+		sprite_index = sprObstacle
 	}
 	else{
-		step++
+		sprite_index = sprEnemy
 	}
+	step = 0;
 }
-
-if(distance_to_object(oPlayer) < 40){
-	attack_input = true;
-	sprite_index = sprObstacle
-}
-else{
-	sprite_index = sprEnemy
-}
+step++
 	
-=======
->>>>>>> Stashed changes
 
 // Inherit the parent event
 event_inherited();
