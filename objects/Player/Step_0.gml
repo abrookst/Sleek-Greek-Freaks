@@ -4,6 +4,10 @@
 
 if global.onGround {
 	global.yVelocity = 0;
+	if keyboard_check(vk_space){
+		global.yVelocity = 10;
+	}
+	
 	if keyboard_check(vk_left) {
 		global.xVelocity = -5;
 	} else if keyboard_check(vk_right) {
@@ -11,12 +15,18 @@ if global.onGround {
 	} else {
 		global.xVelocity = 0;
 	}
-	
-	if keyboard_check(vk_space){
-		global.yVelocity = 10;
-	}
 } else {
 	global.yVelocity -= 0.5;
+	
+	if keyboard_check(vk_left) {
+		if global.xVelocity > -5 {
+			global.xVelocity -= 0.5;
+		}
+	} else if keyboard_check(vk_right) {
+		if global.xVelocity < 5 {
+			global.xVelocity += 0.5;
+		}
+	}
 }
 
 x += global.xVelocity;
