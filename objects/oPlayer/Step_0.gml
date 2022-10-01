@@ -1,8 +1,8 @@
 //Get inputs
 if team == 1{
 	input_dir = keyboard_check(vk_right) - keyboard_check(vk_left);
-	input_jump = keyboard_check(ord("Z"));
-	attack_input = keyboard_check_pressed(ord("X"));
+	input_jump = keyboard_check(ord("N"));
+	attack_input = keyboard_check_pressed(ord("M"));
 }
 else if team == 2 {
 	input_dir = keyboard_check(ord("D")) - keyboard_check(ord("A"));
@@ -47,25 +47,33 @@ if onGround {
 	}
 }
 
-if input_jump and !stunned {
+if input_jump and !stunned and jumpCooldown <= 0 {
+	show_debug_message(jumpCooldown)
 	if coyote_time <= 6 {//Normal Jump (with coyote time)
 		yVelocity = -jumpForce;
 		coyote_time += 10;
+		jumpCooldown = 10;
 	} else if touchLeft {//Wall Jump Left
 		yVelocity = -wallJumpUpForce;
-		xVelocity = wallJumpSideForce;
+		if input_dir < 0
+			xVelocity = wallJumpSideForce*2;
+		else
+			xVelocity = wallJumpSideForce;
 	} else if touchRight {//Wall Jump Right
 		yVelocity = -wallJumpUpForce;
-		xVelocity = -wallJumpSideForce;
+		if input_dir < 0
+			xVelocity = -wallJumpSideForce*2;
+		else
+			xVelocity = -wallJumpSideForce;
 	}
 }
 
 if attack_input and !stunned {
 	attacked = collision_circle(x+(64*-image_xscale), y, 32, oPlayer, false, true);
 	if attacked {
-		attacked.stunned += 20;
-		attacked.yVelocity = -10;
-		attacked.xVelocity = -image_xscale * 5;
+		attacked.stunned = xKnockback + yKnockback;
+		attacked.yVelocity = -yKnockback;
+		attacked.xVelocity = -image_xscale * xKnockback;
 	}
 }
 
@@ -81,4 +89,7 @@ y += yVelocity;
 
 if stunned {
 	stunned -= 1;
+}
+if jumpCooldown > 0 {
+	jumpCooldown -= 1;
 }
