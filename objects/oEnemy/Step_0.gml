@@ -5,9 +5,6 @@ input_jump = false;
 attack_input = false;
 input_down = false;
 
-if(touchLeft or touchRight){
-	input_jump = true;
-}
 if(distance_to_object(oPlayer) < 30){
 	input_dir = -oPlayer.input_dir
 	attack_input = true;
@@ -19,7 +16,19 @@ else{
 if !stunned {
 		sprite_index = sprEnemy;
 }
-if(oPlayer.input_dir == 0 or oPlayer.y != oEnemy.y){
+if(distance_to_object(oEdge) < 200){
+	if(oEdge.x < x){
+		input_dir = 1;
+	}
+	else{
+		input_dir = -1;
+	}
+}
+else if(touchLeft or touchRight){
+	input_jump = true;
+	input_dir = -input_dir
+}
+else if(oPlayer.input_dir == 0){
 	if(step == 5){
 		rando = random_range(0,1000)
 		if(rando < 250){
@@ -41,13 +50,15 @@ if(oPlayer.input_dir == 0 or oPlayer.y != oEnemy.y){
 	}
 
 }
+else{
+	if(oPlayer.x < x){
+		input_dir = -1;
+	}
+	else{
+		input_dir = 1;
+	}
 
-if(distance_to_object(oEdge) < 20){
-	input_dir = -input_dir;
 }
 
 // Inherit the parent event
 event_inherited();
-
-//if above player, move left or right
-//if to left, move left, if to the right, move right
