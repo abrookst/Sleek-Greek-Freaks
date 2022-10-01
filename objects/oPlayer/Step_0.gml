@@ -38,14 +38,14 @@ if  onGround {
 
 if input_jump {
 	if coyote_time < 6 {
-		yVelocity = -12;
+		yVelocity = -jumpForce;
 		coyote_time += 10;
 	} else if touchLeft {
-		yVelocity = -10;
-		xVelocity = 8;
+		yVelocity = -wallJumpUpForce;
+		xVelocity = wallJumpSideForce;
 	} else if touchRight {
-		yVelocity = -10;
-		xVelocity = -8;
+		yVelocity = -wallJumpUpForce;
+		xVelocity = -wallJumpSideForce;
 	}
 }
 
