@@ -100,6 +100,13 @@ if place_meeting(x+ xVelocity, y, oCollidableParent){
 	}
 	xVelocity = 0;
 }
+if place_meeting(x, y, oCollidableParent){
+	show_debug_message("STUCK")
+	while place_meeting(x, y, oCollidableParent){
+		y-=1;
+		x+=1;
+	}
+}
 
 x += xVelocity;
 y += yVelocity;
