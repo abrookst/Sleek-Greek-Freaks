@@ -12,7 +12,7 @@ current_event = irandom(Events.total-1);
 // For each event, put in the switch case
 // what should happen every 10 seconds
 
-// Remove events of last event.
+// Remove things of last event.
 clearEvent(current_event)
 
 switch(current_event){
