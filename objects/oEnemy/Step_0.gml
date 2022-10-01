@@ -1,6 +1,53 @@
 /// @description Apply Velocities
 // You can write your code in this editor
 
+onGround = place_meeting(x, y+1, oBarrier);
+touchLeft = place_meeting(x-1, y, oBarrier);
+touchRight = place_meeting(x+1, y, oBarrier);
+
+//if on ground or not
+if(onGround){
+	//yVelocity = 0;
+	coyote_time = 0;
+}
+else{
+	coyote_time += 1;
+	yVelocity += grav;
+}
+
+//if near an edge, move and jump the other way
+if(distance_to_object(oEdge) < 100){
+	dir = point_direction(x,y, oEdge.x, oEdge.y);
+	xVelocity = -dir * runSpeed;
+	if coyote_time < 6 and onGround {
+		show_debug_message(coyote_time)
+		yVelocity = -12;
+		coyote_time += 10;
+	}
+}
+
+else{
+//otherwise, move towards the player
+	dir = point_direction(x,y, oPlayer.x, oPlayer.y);
+	xVelocity = dir * runSpeed;
+	//randomly jump
+	rando = random_range(0, 300);
+	if rando == 2 and coyote_time < 6 and onGround {
+		show_debug_message(coyote_time)
+		yVelocity = -12;
+		coyote_time += 10;
+	}
+	if(distance_to_object(oPlayer) < 50){
+		//throw punch
+	}
+}
+x += xVelocity;
+show_debug_message(yVelocity)
+y += yVelocity;
+
+
+
+/*
 input_dir = keyboard_check(vk_right) - keyboard_check(vk_left);
 if (input_dir != 0){
 	image_xscale = -input_dir;
@@ -36,10 +83,11 @@ if  onGround {
 	}
 }
 
-if input_jump and coyote_time < 6 {
-	show_debug_message(coyote_time)
-	yVelocity = -12;
-	coyote_time += 10;
+if input_jump {
+	if coyote_time < 6 {
+		yVelocity = -12;
+		coyote_time += 10;
+	}
 }
 
 if place_meeting(x, y+yVelocity, oBarrier){
@@ -55,3 +103,4 @@ y += yVelocity;
  onGround = false;
  touchLeft = false;
  touchRight = false;
+ */
