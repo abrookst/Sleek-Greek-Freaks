@@ -17,12 +17,19 @@ if (input_dir != 0){//Change sprite facing direction based on inputs
 
 //Check touching
 onGround = place_meeting(x, y+1, oBarrier)
-if !onGround and !input_down and place_meeting(x, y+1, oPlatform){
-	onGround = true;
+if (!input_down) {
+	platform = instance_place(x, y+10, oPlatform);
+	if platform and y < platform.y+10 {
+		onGround = true;
+	}
 }
 touchLeft = place_meeting(x-1, y, oBarrier);
 touchRight = place_meeting(x+1, y, oBarrier);
+<<<<<<< Updated upstream
 //show_debug_message(onGround)
+=======
+yVelocity += grav;
+>>>>>>> Stashed changes
 if onGround {
 	coyote_time = 0;
 	
@@ -32,7 +39,6 @@ if onGround {
 	}
 } else {
 	coyote_time += 1;
-	yVelocity += grav;
 	if !stunned {
 		if touchLeft or touchRight {//Wall slide
 			yVelocity = min(2, yVelocity);
@@ -86,11 +92,14 @@ if place_meeting(x, y+yVelocity, oCollidableParent){
 	}
 	yVelocity = 0;
 }
-if yVelocity > 0 and place_meeting(x, y+yVelocity, oPlatform){
-	while !place_meeting(x, y+1, oPlatform){
-		y+=1;
+if !input_down and yVelocity > 0 {
+	platform = instance_place(x, y+yVelocity, oPlatform);
+	if platform and y < platform.y+10 {
+		while !place_meeting(x, y+10, platform){
+			y+=1;
+		}
+		yVelocity = 0;
 	}
-	yVelocity = 0;
 }
 if place_meeting(x+ xVelocity, y, oCollidableParent){
 	while !place_meeting(x+sign(xVelocity), y, oCollidableParent){
@@ -98,14 +107,11 @@ if place_meeting(x+ xVelocity, y, oCollidableParent){
 	}
 	xVelocity = 0;
 }
-if place_meeting(x, y, oCollidableParent){
-	yVelocity = -3;
-}
 
 x += xVelocity;
 y += yVelocity;
 
-if stunned {
+if stunned > 0 {
 	stunned -= 1;
 }
 if jumpCooldown > 0 {
