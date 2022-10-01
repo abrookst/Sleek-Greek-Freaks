@@ -62,16 +62,10 @@ if input_jump and !stunned and jumpCooldown <= 0 {
 		jumpCooldown = 10;
 	} else if touchLeft {//Wall Jump Left
 		yVelocity = -wallJumpUpForce;
-		if input_dir < 0
-			xVelocity = wallJumpSideForce*2;
-		else
-			xVelocity = wallJumpSideForce;
+		xVelocity = wallJumpSideForce;
 	} else if touchRight {//Wall Jump Right
 		yVelocity = -wallJumpUpForce;
-		if input_dir < 0
-			xVelocity = -wallJumpSideForce*2;
-		else
-			xVelocity = -wallJumpSideForce;
+		xVelocity = -wallJumpSideForce;
 	}
 }
 
