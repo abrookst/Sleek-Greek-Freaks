@@ -3,6 +3,7 @@
 
 input_jump = false;
 attack_input = false;
+input_down = false;
 
 if(touchLeft or touchRight){
 	input_jump = true;

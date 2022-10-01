@@ -3,27 +3,31 @@ if team == 1{
 	input_dir = keyboard_check(vk_right) - keyboard_check(vk_left);
 	input_jump = keyboard_check(ord("N"));
 	attack_input = keyboard_check_pressed(ord("M"));
+	input_down = keyboard_check(vk_down);
 }
 else if team == 2 {
 	input_dir = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 	input_jump = keyboard_check(ord("Q"));
 	attack_input = keyboard_check_pressed(ord("E"));
+	input_down = keyboard_check(ord("S"));
 }
 if (input_dir != 0){//Change sprite facing direction based on inputs
 	image_xscale = -input_dir;
 }
 
 //Check touching
-onGround = place_meeting(x, y+1, oBarrier);
+onGround = place_meeting(x, y+1, oBarrier)
+if !onGround and !input_down and place_meeting(x, y+1, oPlatform){
+	onGround = true;
+}
 touchLeft = place_meeting(x-1, y, oBarrier);
 touchRight = place_meeting(x+1, y, oBarrier);
-
+//show_debug_message(onGround)
 if onGround {
 	coyote_time = 0;
 	
 	//Ground movement
 	if !stunned {
-		yVelocity = 0;
 		xVelocity = input_dir * runSpeed;
 	}
 } else {
@@ -77,10 +81,25 @@ if attack_input and !stunned {
 }
 
 if place_meeting(x, y+yVelocity, oCollidableParent){
+	while !place_meeting(x, y+sign(yVelocity), oCollidableParent){
+		y+=sign(yVelocity);
+	}
+	yVelocity = 0;
+}
+if yVelocity > 0 and place_meeting(x, y+yVelocity, oPlatform){
+	while !place_meeting(x, y+1, oPlatform){
+		y+=1;
+	}
 	yVelocity = 0;
 }
 if place_meeting(x+ xVelocity, y, oCollidableParent){
+	while !place_meeting(x+sign(xVelocity), y, oCollidableParent){
+		x+=sign(xVelocity);
+	}
 	xVelocity = 0;
+}
+if place_meeting(x, y, oCollidableParent){
+	yVelocity = -3;
 }
 
 x += xVelocity;
