@@ -12,26 +12,27 @@ if global.onGround {
 	}
 	
 	if keyboard_check(vk_left) {
-		global.xVelocity = -xSpeed;
+		global.xVelocity = -runSpeed;
 	} else if keyboard_check(vk_right) {
-		global.xVelocity = xSpeed;
+		global.xVelocity = runSpeed;
 	} else {
 		global.xVelocity = 0;
 	}
 } else {
-	if not global.touchLeft {
-		global.yVelocity += 0.5;
-	} else {
-		global.yVelocity = 2;
+	global.yVelocity += 0.5;
+	if global.touchLeft or global.touchRight {
+		if global.yVelocity > 2 {
+			global.yVelocity = 2;
+		}
 	}
 	
 	if keyboard_check(vk_left) {
-		if global.xVelocity > -xSpeed {
-			global.xVelocity = max(global.xVelocity - 0.7, -xSpeed);
+		if global.xVelocity > -runSpeed {
+			global.xVelocity = max(global.xVelocity - 0.7, -runSpeed);
 		}
 	} else if keyboard_check(vk_right) {
-		if global.xVelocity < xSpeed {
-			global.xVelocity = min(global.xVelocity + 0.7, xSpeed);
+		if global.xVelocity < runSpeed {
+			global.xVelocity = min(global.xVelocity + 0.7, runSpeed);
 		}
 	}
 }
