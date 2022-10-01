@@ -40,6 +40,7 @@
     {"id":{"name":"oWater","path":"objects/oWater/oWater.yy",},"order":3,},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":8,},
+    {"id":{"name":"stage2","path":"rooms/stage2/stage2.yy",},"order":5,},
     {"id":{"name":"sprCharSelect","path":"sprites/sprCharSelect/sprCharSelect.yy",},"order":14,},
     {"id":{"name":"oEdge","path":"objects/oEdge/oEdge.yy",},"order":10,},
     {"id":{"name":"sprPlatform","path":"sprites/sprPlatform/sprPlatform.yy",},"order":16,},
@@ -66,6 +67,7 @@
     {"roomId":{"name":"CharSelect","path":"rooms/CharSelect/CharSelect.yy",},},
     {"roomId":{"name":"test","path":"rooms/test/test.yy",},},
     {"roomId":{"name":"stage1","path":"rooms/stage1/stage1.yy",},},
+    {"roomId":{"name":"stage2","path":"rooms/stage2/stage2.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
