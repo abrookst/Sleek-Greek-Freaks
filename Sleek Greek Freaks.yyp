@@ -7,6 +7,7 @@
     {"id":{"name":"sprPlayer4","path":"sprites/sprPlayer4/sprPlayer4.yy",},"order":13,},
     {"id":{"name":"sprEdge","path":"sprites/sprEdge/sprEdge.yy",},"order":8,},
     {"id":{"name":"oP2Select","path":"objects/oP2Select/oP2Select.yy",},"order":12,},
+    {"id":{"name":"sprPandoraPlaceholder","path":"sprites/sprPandoraPlaceholder/sprPandoraPlaceholder.yy",},"order":17,},
     {"id":{"name":"oP3Select","path":"objects/oP3Select/oP3Select.yy",},"order":13,},
     {"id":{"name":"mBattle","path":"sounds/mBattle/mBattle.yy",},"order":1,},
     {"id":{"name":"oPandora","path":"objects/oPandora/oPandora.yy",},"order":9,},
@@ -41,7 +42,9 @@
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":8,},
     {"id":{"name":"sprCharSelect","path":"sprites/sprCharSelect/sprCharSelect.yy",},"order":14,},
     {"id":{"name":"oEdge","path":"objects/oEdge/oEdge.yy",},"order":10,},
+    {"id":{"name":"sprPlatform","path":"sprites/sprPlatform/sprPlatform.yy",},"order":16,},
     {"id":{"name":"sprTitle","path":"sprites/sprTitle/sprTitle.yy",},"order":3,},
+    {"id":{"name":"oPlatform","path":"objects/oPlatform/oPlatform.yy",},"order":17,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -58,9 +61,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},},
     {"roomId":{"name":"CharSelect","path":"rooms/CharSelect/CharSelect.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"test","path":"rooms/test/test.yy",},},
     {"roomId":{"name":"stage1","path":"rooms/stage1/stage1.yy",},},
   ],
