@@ -5,6 +5,7 @@ input_jump = false;
 attack_input = false;
 input_down = false;
 
+<<<<<<< Updated upstream
 //if close to edge, move
 if(distance_to_object(oEdge) < 200){
 	if(input_dir = 1){
@@ -50,6 +51,8 @@ else{
 	sprite_index = sprEnemy
 }
 	
+=======
+>>>>>>> Stashed changes
 
 // Inherit the parent event
 event_inherited();

@@ -70,9 +70,14 @@ if input_jump and !stunned and jumpCooldown <= 0 {
 }
 
 if attack_input and !stunned {
+<<<<<<< Updated upstream
 	attacked = collision_circle(x+(64*-image_xscale), y-72, 32, oPlayer, false, true);
 	if attacked and attacked.stunned <= 0 {
 		//show_debug_message("Hit!")
+=======
+	attacked = collision_circle(x+(64*-image_xscale), y, 32, oPlayer, false, true);
+	if attacked {
+>>>>>>> Stashed changes
 		attacked.stunned = xKnockback + yKnockback;
 		attacked.yVelocity = -yKnockback;
 		attacked.xVelocity = -image_xscale * xKnockback;
