@@ -1,21 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-frames = oEvent.frames;
-seconds = oEvent.seconds;
-
-//Alarm is called 
-alarm_set(0, frames*seconds);
-
-current_event = irandom(Events.total-1);
+global.current_event = irandom(Events.total-1);
 
 // For each event, put in the switch case
 // what should happen every 10 seconds
-
-// Remove things of last event.
-clearEvent(current_event)
-
-switch(current_event){
+switch(global.current_event){
 	case(Events.None): 
 		show_debug_message("No event"); 
 		break;
@@ -59,38 +49,4 @@ switch(current_event){
 	case(Events.Zeus): 
 		show_debug_message("Zeus Event");
 		break;
-}
-
-function clearEvent(event){
-	switch(event){
-		case(Events.None): 
-			break;
-		case(Events.Aphrodite): 
-			break;
-		case(Events.Apollo): 
-			break;
-		case(Events.Ares):
-			global.attackModifer = 1.0;
-			break;
-		case(Events.Artemis): 
-			break;
-		case(Events.Athena): 
-			break;
-		case(Events.Demeter): 
-			break;
-		case(Events.Dionysus): 
-			break;
-		case(Events.Hades): 
-			break;
-		case(Events.Hephaestus): 
-			break;
-		case(Events.Hera): 
-			break;
-		case(Events.Hermes): 
-			break;
-		case(Events.Poseidon):
-			break;
-		case(Events.Zeus): 
-			break;
-	}
 }

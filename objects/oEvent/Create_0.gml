@@ -6,8 +6,6 @@ global.attackModifer = 1.0;
 seconds = 10;
 frames = 60;
 
-alarm[0] = seconds * frames; //How many frames until the next time the alarm triggers
-
 //Enum for all events
 enum Events {
 	None,
@@ -27,5 +25,7 @@ enum Events {
 	total //This enum is just to indicate last event
 }
 
-current_event = Events.None;
-show_debug_message("Current event is: ");
+global.current_event = Events.None;
+show_debug_message("Current event is: None");
+
+alarm[0] = seconds * frames; //How many frames until the next time the alarm triggers

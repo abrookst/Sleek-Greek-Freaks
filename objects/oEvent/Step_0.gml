@@ -3,7 +3,7 @@
 // For each event, put in the switch case
 // what should happen every frame
 
-switch(current_event){
+switch(global.current_event){
 	case(Events.None): 
 		break;
 	case(Events.Aphrodite): 
@@ -33,3 +33,4 @@ switch(current_event){
 	case(Events.Zeus): 
 		break;
 }
+
