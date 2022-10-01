@@ -48,7 +48,6 @@ if onGround {
 }
 
 if input_jump and !stunned and jumpCooldown <= 0 {
-	show_debug_message(jumpCooldown)
 	if coyote_time <= 6 {//Normal Jump (with coyote time)
 		yVelocity = -jumpForce;
 		coyote_time += 10;
@@ -77,10 +76,10 @@ if attack_input and !stunned {
 	}
 }
 
-if place_meeting(x, y+yVelocity, oBarrier){
+if place_meeting(x, y+yVelocity, oCollidableParent){
 	yVelocity = 0;
 }
-if place_meeting(x+ xVelocity, y, oBarrier){
+if place_meeting(x+ xVelocity, y, oCollidableParent){
 	xVelocity = 0;
 }
 
