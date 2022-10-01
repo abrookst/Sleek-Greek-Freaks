@@ -6,9 +6,11 @@
 // Inherit the parent event
 event_inherited();
 
-if input_dir == 0 {
+//Play animation
+if !onGround and !touchLeft and !touchRight {
+	sprite_index = sprPandoraJump;;
+} else if input_dir == 0 {
 	sprite_index = sprPandoraStand;
 } else {
-	//Play animation
 	sprite_index = sprPandoraWalk;
 }

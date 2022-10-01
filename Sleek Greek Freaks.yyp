@@ -13,6 +13,7 @@
     {"id":{"name":"mBattle","path":"sounds/mBattle/mBattle.yy",},"order":1,},
     {"id":{"name":"oPandora","path":"objects/oPandora/oPandora.yy",},"order":9,},
     {"id":{"name":"mVibes","path":"sounds/mVibes/mVibes.yy",},"order":0,},
+    {"id":{"name":"sprPandoraJump","path":"sprites/sprPandoraJump/sprPandoraJump.yy",},"order":18,},
     {"id":{"name":"sprPlayer3","path":"sprites/sprPlayer3/sprPlayer3.yy",},"order":12,},
     {"id":{"name":"sprObstacle","path":"sprites/sprObstacle/sprObstacle.yy",},"order":1,},
     {"id":{"name":"sprWater","path":"sprites/sprWater/sprWater.yy",},"order":2,},
