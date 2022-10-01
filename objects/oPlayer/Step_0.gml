@@ -1,6 +1,6 @@
 //Get inputs
 input_dir = keyboard_check(vk_right) - keyboard_check(vk_left);
-if (input_dir != 0){
+if (input_dir != 0){//Change sprite facing direction based on inputs
 	image_xscale = -input_dir;
 }
 input_jump = keyboard_check(vk_space);
@@ -19,26 +19,24 @@ if  onGround {
 } else {
 	coyote_time += 1;
 	yVelocity += grav;//Gravity
-	if  touchLeft or  touchRight {//Wall slide
-		if yVelocity > 2 {
-			yVelocity = 2;
-		}
+	if touchLeft or touchRight {//Wall slide
+		yVelocity = min(2, yVelocity);
 	}
 	
 	//Air movement
 	if input_dir < 0 {//Moving left
 		if xVelocity > -runSpeed {
-			xVelocity = max(xVelocity - 0.7, -runSpeed);
+			xVelocity = max(xVelocity - airRunAcceleration, -runSpeed);
 		}
 	} else if input_dir > 0 {//Moving right
 		if xVelocity < runSpeed {
-			xVelocity = min(xVelocity + 0.7, runSpeed);
+			xVelocity = min(xVelocity + airRunAcceleration, runSpeed);
 		}
 	}
 }
 
 if input_jump {
-	if coyote_time < 6 {//Normal Jump (with coyote time)
+	if coyote_time <= 6 {//Normal Jump (with coyote time)
 		yVelocity = -jumpForce;
 		coyote_time += 10;
 	} else if touchLeft {//Wall Jump Left
@@ -60,6 +58,6 @@ if place_meeting(x+ xVelocity, y, oBarrier){
 x += xVelocity;
 y += yVelocity;
 
- onGround = false;
- touchLeft = false;
- touchRight = false;
+onGround = false;
+touchLeft = false;
+touchRight = false;
