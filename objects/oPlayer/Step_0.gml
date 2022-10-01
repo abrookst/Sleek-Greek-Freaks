@@ -61,7 +61,7 @@ if input_jump and !stunned {
 }
 
 if attack_input and !stunned {
-	attacked = collision_circle(x+64, y, 32, oPlayer, false, true);
+	attacked = collision_circle(x+(50*input_dir), y, 32, oPlayer, false, true);
 	if attacked {
 		attacked.stunned += 10;
 		attacked.yVelocity = -10;
