@@ -40,6 +40,12 @@ if input_jump {
 	if coyote_time < 6 {
 		yVelocity = -12;
 		coyote_time += 10;
+	} else if touchLeft {
+		yVelocity = -10;
+		xVelocity = 8;
+	} else if touchRight {
+		yVelocity = -10;
+		xVelocity = -8;
 	}
 }
 
