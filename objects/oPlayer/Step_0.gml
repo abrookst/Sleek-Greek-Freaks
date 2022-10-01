@@ -18,7 +18,7 @@ if global.onGround {
 	global.xVelocity = input_dir * runSpeed;
 } else {
 	coyote_time += 1;
-	global.yVelocity += 0.5;
+	global.yVelocity += grav;
 	if global.touchLeft or global.touchRight {
 		if global.yVelocity > 2 {
 			global.yVelocity = 2;
@@ -43,9 +43,15 @@ if input_jump and coyote_time < 6 {
 }
 
 if place_meeting(x, y+global.yVelocity, oBarrier){
+	while !place_meeting(x, y+sign(global.yVelocity), oBarrier){
+		y += sign(global.yVelocity);
+	}
 	global.yVelocity = 0;
 }
 if place_meeting(x+global.xVelocity, y, oBarrier){
+	while !place_meeting(x+sign(global.xVelocity), y, oBarrier){
+		x += sign(global.xVelocity);
+	}
 	global.xVelocity = 0;
 }
 
