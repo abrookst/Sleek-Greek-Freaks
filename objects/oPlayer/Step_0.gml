@@ -22,7 +22,7 @@ if !onGround and !input_down and place_meeting(x, y+1, oPlatform){
 }
 touchLeft = place_meeting(x-1, y, oBarrier);
 touchRight = place_meeting(x+1, y, oBarrier);
-show_debug_message(onGround)
+//show_debug_message(onGround)
 if onGround {
 	coyote_time = 0;
 	
