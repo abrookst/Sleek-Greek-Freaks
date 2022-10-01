@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.yVelocity = 2;
-global.xVelocity = -10;
 
+yVelocity = 2;
+xVelocity = -10;

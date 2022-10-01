@@ -1,51 +1,58 @@
 /// @description Apply Velocities
 // You can write your code in this editor
 
-global.onGround = place_meeting(x, y+1, oBarrier);
-global.touchLeft = place_meeting(x-1, y, oBarrier);
-global.touchRight = place_meeting(x+1, y, oBarrier);
+input_dir = keyboard_check(vk_right) - keyboard_check(vk_left);
+if (input_dir != 0){
+	image_xscale = -input_dir;
+}
+input_jump = keyboard_check(vk_space);
 
-if global.onGround {
-	global.yVelocity = 0;
-	if keyboard_check(vk_space){
-		global.yVelocity = -12;
-	}
+onGround = place_meeting(x, y+1, oBarrier);
+touchLeft = place_meeting(x-1, y, oBarrier);
+touchRight = place_meeting(x+1, y, oBarrier);
+
+if  onGround {
+	yVelocity = 0;
+	coyote_time = 0;
 	
-	if keyboard_check(vk_left) {
-		global.xVelocity = -xSpeed;
-	} else if keyboard_check(vk_right) {
-		global.xVelocity = xSpeed;
-	} else {
-		global.xVelocity = 0;
-	}
+	xVelocity = input_dir * runSpeed;
 } else {
-	if not global.touchLeft {
-		global.yVelocity += 0.5;
-	} else {
-		global.yVelocity = 2;
+	coyote_time += 1;
+	yVelocity += 0.5;
+	if  touchLeft or  touchRight {
+		if yVelocity > 2 {
+			yVelocity = 2;
+		}
 	}
 	
-	if keyboard_check(vk_left) {
-		if global.xVelocity > -xSpeed {
-			global.xVelocity = max(global.xVelocity - 0.7, -xSpeed);
+	if input_dir < 0 {
+		if xVelocity > -runSpeed {
+			xVelocity = max(xVelocity - 0.7, -runSpeed);
 		}
-	} else if keyboard_check(vk_right) {
-		if global.xVelocity < xSpeed {
-			global.xVelocity = min(global.xVelocity + 0.7, xSpeed);
+	} else if input_dir > 0 {
+		if xVelocity < runSpeed {
+			xVelocity = min(xVelocity + 0.7, runSpeed);
 		}
 	}
 }
 
-if place_meeting(x, y+global.yVelocity, oBarrier){
-	global.yVelocity = 0;
-}
-if place_meeting(x+global.xVelocity, y, oBarrier){
-	global.xVelocity = 0;
+if input_jump {
+	if coyote_time < 6 {
+		yVelocity = -12;
+		coyote_time += 10;
+	}
 }
 
-x += global.xVelocity;
-y += global.yVelocity;
+if place_meeting(x, y+yVelocity, oBarrier){
+	yVelocity = 0;
+}
+if place_meeting(x+ xVelocity, y, oBarrier){
+	xVelocity = 0;
+}
 
-global.onGround = false;
-global.touchLeft = false;
-global.touchRight = false;
+x += xVelocity;
+y += yVelocity;
+
+ onGround = false;
+ touchLeft = false;
+ touchRight = false;
