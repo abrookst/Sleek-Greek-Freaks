@@ -10,6 +10,7 @@
     {"id":{"name":"oObstacle","path":"objects/oObstacle/oObstacle.yy",},"order":2,},
     {"id":{"name":"oExit","path":"objects/oExit/oExit.yy",},"order":6,},
     {"id":{"name":"sprExit","path":"sprites/sprExit/sprExit.yy",},"order":5,},
+    {"id":{"name":"sprPandoraStand","path":"sprites/sprPandoraStand/sprPandoraStand.yy",},"order":6,},
     {"id":{"name":"sprStart","path":"sprites/sprStart/sprStart.yy",},"order":4,},
     {"id":{"name":"test","path":"rooms/test/test.yy",},"order":1,},
     {"id":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},"order":3,},
