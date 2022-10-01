@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "Sleek Greek Freaks",
   "resources": [
+    {"id":{"name":"sprEnemy","path":"sprites/sprEnemy/sprEnemy.yy",},"order":6,},
     {"id":{"name":"mBattle","path":"sounds/mBattle/mBattle.yy",},"order":1,},
     {"id":{"name":"mVibes","path":"sounds/mVibes/mVibes.yy",},"order":0,},
     {"id":{"name":"sprObstacle","path":"sprites/sprObstacle/sprObstacle.yy",},"order":1,},
@@ -13,6 +14,7 @@
     {"id":{"name":"sprPandoraStand","path":"sprites/sprPandoraStand/sprPandoraStand.yy",},"order":6,},
     {"id":{"name":"sprStart","path":"sprites/sprStart/sprStart.yy",},"order":4,},
     {"id":{"name":"test","path":"rooms/test/test.yy",},"order":1,},
+    {"id":{"name":"CharSelect","path":"rooms/CharSelect/CharSelect.yy",},"order":3,},
     {"id":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},"order":3,},
     {"id":{"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},"order":2,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":7,},
@@ -21,6 +23,7 @@
     {"id":{"name":"oTitle","path":"objects/oTitle/oTitle.yy",},"order":4,},
     {"id":{"name":"oWater","path":"objects/oWater/oWater.yy",},"order":3,},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
+    {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":8,},
     {"id":{"name":"sprTitle","path":"sprites/sprTitle/sprTitle.yy",},"order":3,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
@@ -39,6 +42,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},},
+    {"roomId":{"name":"CharSelect","path":"rooms/CharSelect/CharSelect.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"test","path":"rooms/test/test.yy",},},
   ],

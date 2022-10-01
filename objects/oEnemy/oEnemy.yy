@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oPlayer",
+  "name": "oEnemy",
   "spriteId": {
-    "name": "sprPandoraStand",
-    "path": "sprites/sprPandoraStand/sprPandoraStand.yy",
+    "name": "sprEnemy",
+    "path": "sprites/sprEnemy/sprEnemy.yy",
   },
   "solid": false,
   "visible": true,

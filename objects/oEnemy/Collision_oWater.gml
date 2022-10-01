@@ -2,5 +2,5 @@
 // You can write your code in this editor
 
 
-yVelocity = 2;
-xVelocity = -10;
+oPlayer.yVelocityp1 = 2;
+oPlayer.xVelocityp1 = -10;

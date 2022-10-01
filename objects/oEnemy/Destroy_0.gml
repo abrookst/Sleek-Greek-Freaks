@@ -1,6 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-yVelocity = 2;
-xVelocity = -10;
+instance_create_layer(600, 250, "Instances", oPlayer1);
