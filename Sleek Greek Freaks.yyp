@@ -29,6 +29,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":7,},
     {"id":{"name":"oBarrier","path":"objects/oBarrier/oBarrier.yy",},"order":1,},
     {"id":{"name":"oCharSelectButton","path":"objects/oCharSelectButton/oCharSelectButton.yy",},"order":5,},
+    {"id":{"name":"oCollidableParent","path":"objects/oCollidableParent/oCollidableParent.yy",},"order":16,},
     {"id":{"name":"stage1","path":"rooms/stage1/stage1.yy",},"order":4,},
     {"id":{"name":"sprPlayer1","path":"sprites/sprPlayer1/sprPlayer1.yy",},"order":10,},
     {"id":{"name":"sprPandoraWalk","path":"sprites/sprPandoraWalk/sprPandoraWalk.yy",},"order":9,},

@@ -76,10 +76,10 @@ if attack_input and !stunned {
 	}
 }
 
-if place_meeting(x, y+yVelocity, oBarrier){
+if place_meeting(x, y+yVelocity, oCollidableParent){
 	yVelocity = 0;
 }
-if place_meeting(x+ xVelocity, y, oBarrier){
+if place_meeting(x+ xVelocity, y, oCollidableParent){
 	xVelocity = 0;
 }
 
