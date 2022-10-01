@@ -72,13 +72,14 @@ if input_jump and !stunned and jumpCooldown <= 0 {
 if attack_input and !stunned {
 	attacked = collision_circle(x+(64*-image_xscale), y-72, 32, oPlayer, false, true);
 	if attacked and attacked.stunned <= 0 {
-		show_debug_message("Hit!")
+		//show_debug_message("Hit!")
 		attacked.stunned = xKnockback + yKnockback;
 		attacked.yVelocity = -yKnockback;
 		attacked.xVelocity = -image_xscale * xKnockback;
 	}
 }
 
+//Make sure player does not pass through collidables
 if place_meeting(x, y+yVelocity, oCollidableParent){
 	while !place_meeting(x, y+sign(yVelocity), oCollidableParent){
 		y+=sign(yVelocity);
@@ -100,6 +101,8 @@ if place_meeting(x+ xVelocity, y, oCollidableParent){
 	}
 	xVelocity = 0;
 }
+
+//Get unstuck
 if place_meeting(x, y, oCollidableParent){
 	show_debug_message("STUCK")
 	while place_meeting(x, y, oCollidableParent){

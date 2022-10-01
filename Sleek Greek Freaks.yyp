@@ -4,6 +4,7 @@
   "name": "Sleek Greek Freaks",
   "resources": [
     {"id":{"name":"sprEnemy","path":"sprites/sprEnemy/sprEnemy.yy",},"order":6,},
+    {"id":{"name":"playerManager","path":"objects/playerManager/playerManager.yy",},"order":18,},
     {"id":{"name":"sprPlayer4","path":"sprites/sprPlayer4/sprPlayer4.yy",},"order":13,},
     {"id":{"name":"sprEdge","path":"sprites/sprEdge/sprEdge.yy",},"order":8,},
     {"id":{"name":"oP2Select","path":"objects/oP2Select/oP2Select.yy",},"order":12,},
