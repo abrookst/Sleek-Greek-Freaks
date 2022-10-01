@@ -25,11 +25,9 @@ if (!input_down) {
 }
 touchLeft = place_meeting(x-1, y, oBarrier);
 touchRight = place_meeting(x+1, y, oBarrier);
-<<<<<<< Updated upstream
-//show_debug_message(onGround)
-=======
+
 yVelocity += grav;
->>>>>>> Stashed changes
+
 if onGround {
 	coyote_time = 0;
 	
