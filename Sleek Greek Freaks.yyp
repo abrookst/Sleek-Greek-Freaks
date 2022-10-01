@@ -22,6 +22,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":7,},
     {"id":{"name":"oBarrier","path":"objects/oBarrier/oBarrier.yy",},"order":1,},
     {"id":{"name":"oStart","path":"objects/oStart/oStart.yy",},"order":5,},
+    {"id":{"name":"sprPandoraWalk","path":"sprites/sprPandoraWalk/sprPandoraWalk.yy",},"order":9,},
     {"id":{"name":"oTitle","path":"objects/oTitle/oTitle.yy",},"order":4,},
     {"id":{"name":"oWater","path":"objects/oWater/oWater.yy",},"order":3,},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
