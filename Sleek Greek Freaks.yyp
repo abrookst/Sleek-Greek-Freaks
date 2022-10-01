@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"sprEnemy","path":"sprites/sprEnemy/sprEnemy.yy",},"order":6,},
     {"id":{"name":"mBattle","path":"sounds/mBattle/mBattle.yy",},"order":1,},
+    {"id":{"name":"oPandora","path":"objects/oPandora/oPandora.yy",},"order":9,},
     {"id":{"name":"mVibes","path":"sounds/mVibes/mVibes.yy",},"order":0,},
     {"id":{"name":"sprObstacle","path":"sprites/sprObstacle/sprObstacle.yy",},"order":1,},
     {"id":{"name":"sprWater","path":"sprites/sprWater/sprWater.yy",},"order":2,},

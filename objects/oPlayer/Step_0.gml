@@ -36,10 +36,11 @@ if  onGround {
 	}
 }
 
-if input_jump and coyote_time < 6 {
-	show_debug_message(coyote_time)
-	yVelocity = -12;
-	coyote_time += 10;
+if input_jump {
+	if coyote_time < 6 {
+		yVelocity = -12;
+		coyote_time += 10;
+	}
 }
 
 if place_meeting(x, y+yVelocity, oBarrier){
