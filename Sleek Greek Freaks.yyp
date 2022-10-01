@@ -33,6 +33,7 @@
     {"id":{"name":"sprPlayer1","path":"sprites/sprPlayer1/sprPlayer1.yy",},"order":10,},
     {"id":{"name":"sprPandoraWalk","path":"sprites/sprPandoraWalk/sprPandoraWalk.yy",},"order":9,},
     {"id":{"name":"oTitle","path":"objects/oTitle/oTitle.yy",},"order":4,},
+    {"id":{"name":"oHercules","path":"objects/oHercules/oHercules.yy",},"order":15,},
     {"id":{"name":"oWater","path":"objects/oWater/oWater.yy",},"order":3,},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":8,},

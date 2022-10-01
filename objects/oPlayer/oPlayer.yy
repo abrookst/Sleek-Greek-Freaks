@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oPlayer",
   "spriteId": {
-    "name": "sprPandoraStand",
-    "path": "sprites/sprPandoraStand/sprPandoraStand.yy",
+    "name": "Sprite1",
+    "path": "sprites/Sprite1/Sprite1.yy",
   },
   "solid": true,
   "visible": true,

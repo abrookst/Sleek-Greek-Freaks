@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oPandora",
+  "name": "oHercules",
   "spriteId": {
-    "name": "sprPandoraStand",
-    "path": "sprites/sprPandoraStand/sprPandoraStand.yy",
+    "name": "sprObstacle",
+    "path": "sprites/sprObstacle/sprObstacle.yy",
   },
   "solid": false,
   "visible": true,

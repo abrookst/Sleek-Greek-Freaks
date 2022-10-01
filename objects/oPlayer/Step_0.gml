@@ -48,7 +48,6 @@ if onGround {
 }
 
 if input_jump and !stunned and jumpCooldown <= 0 {
-	show_debug_message(jumpCooldown)
 	if coyote_time <= 6 {//Normal Jump (with coyote time)
 		yVelocity = -jumpForce;
 		coyote_time += 10;
