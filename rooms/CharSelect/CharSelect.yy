@@ -33,6 +33,8 @@
     {"name":"inst_3AB3430E","path":"rooms/CharSelect/CharSelect.yy",},
     {"name":"inst_260169D","path":"rooms/CharSelect/CharSelect.yy",},
     {"name":"inst_2CAE1F70","path":"rooms/CharSelect/CharSelect.yy",},
+    {"name":"inst_72BB244","path":"rooms/CharSelect/CharSelect.yy",},
+    {"name":"inst_1E6B9E92","path":"rooms/CharSelect/CharSelect.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

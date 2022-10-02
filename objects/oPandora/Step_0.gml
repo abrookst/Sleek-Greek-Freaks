@@ -7,13 +7,13 @@
 event_inherited();
 
 //Play animation
-if !onGround and !touchLeft and !touchRight {
+if(attackCooldown > 0){
+	sprite_index = sprPandoraAttack;
+}
+else if !onGround and !touchLeft and !touchRight {
 	sprite_index = sprPandoraJump;;
 } else if input_dir == 0 {
 	sprite_index = sprPandoraStand;
 } else {
 	sprite_index = sprPandoraWalk;
-}
-if(attack_input){
-	sprite_index = sprPandoraAttack;
 }
