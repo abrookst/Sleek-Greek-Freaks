@@ -29,6 +29,7 @@ switch(global.current_event){
 	case(Events.Hermes): 
 		break;
 	case(Events.Poseidon):
+		created_obj = instance_create_layer(686, 361, "Instances", oWater)
 		break;
 	case(Events.Zeus): 
 		break;
