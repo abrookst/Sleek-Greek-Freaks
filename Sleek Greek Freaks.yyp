@@ -57,6 +57,7 @@
     {"id":{"name":"sprCharSelect","path":"sprites/sprCharSelect/sprCharSelect.yy",},"order":14,},
     {"id":{"name":"stage3","path":"rooms/stage3/stage3.yy",},"order":6,},
     {"id":{"name":"oEdge","path":"objects/oEdge/oEdge.yy",},"order":10,},
+    {"id":{"name":"oArrow","path":"objects/oArrow/oArrow.yy",},"order":22,},
     {"id":{"name":"sprPlatform","path":"sprites/sprPlatform/sprPlatform.yy",},"order":16,},
     {"id":{"name":"sprTitle","path":"sprites/sprTitle/sprTitle.yy",},"order":3,},
     {"id":{"name":"oPlatform","path":"objects/oPlatform/oPlatform.yy",},"order":17,},
@@ -76,7 +77,6 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"stage3","path":"rooms/stage3/stage3.yy",},},
     {"roomId":{"name":"stage1","path":"rooms/stage1/stage1.yy",},},
     {"roomId":{"name":"stage2","path":"rooms/stage2/stage2.yy",},},
     {"roomId":{"name":"stage3","path":"rooms/stage3/stage3.yy",},},
