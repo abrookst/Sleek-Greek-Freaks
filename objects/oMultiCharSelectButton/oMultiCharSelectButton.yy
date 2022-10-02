@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oMultiCharSelectButton",
   "spriteId": {
-    "name": "sprCharSelectButton",
-    "path": "sprites/sprCharSelectButton/sprCharSelectButton.yy",
+    "name": "sprMultiPlayerButton",
+    "path": "sprites/sprMultiPlayerButton/sprMultiPlayerButton.yy",
   },
   "solid": false,
   "visible": true,

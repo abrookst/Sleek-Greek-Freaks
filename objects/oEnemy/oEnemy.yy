@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oEnemy",
   "spriteId": {
-    "name": "sprEnemy",
-    "path": "sprites/sprEnemy/sprEnemy.yy",
+    "name": "sprPandoraPlaceholder",
+    "path": "sprites/sprPandoraPlaceholder/sprPandoraPlaceholder.yy",
   },
   "solid": false,
   "visible": true,
