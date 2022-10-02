@@ -4,60 +4,52 @@
 input_jump = false;
 attack_input = false;
 input_down = false;
-//attack
-if(distance_to_object(oPlayer) < 30){
-	input_dir = -oPlayer.input_dir
-	attack_input = true;
-	sprite_index = sprWater;
-}
-else{
-	sprite_index = sprEnemy;
-}
-//stunsprite
-if !stunned {
-		sprite_index = sprEnemy;
-}
-//check for edge
-if(distance_to_object(oEdge) < 200){
-	input_dir = -input_dir
-	input_jump = true;
-}
-//walljump
-else if(touchLeft or touchRight){
-	input_jump = true;
-	input_dir = -input_dir
-}
-else if(oPlayer.input_dir == 0 or oPlayer.y != oEnemy.y){
-	if(step == 5){
-		rando = random_range(0,1000)
-		if(rando < 250){
-			input_dir = 1
-		}
-		else if(rando < 500){
-			input_dir = -1;
-		}
-		else if(rando < 750){
-			input_jump = true;
-		}
-		else{
-			input_dir = 0;	
-		}
-		step = 0
-	}
-	else{
-		step++
-	}
 
+//if on wall, jump in opposite direction regardless
+if(touchLeft or touchRight){
+	input_jump = true;
+	input_dir = -input_dir;
 }
-else if(distance_to_object(oPlayer) < 300){
-	if(oPlayer.x < x){
-		input_dir = -1;
-	}
-	else{
+
+nearestEdge = instance_nearest(x,y,oEdge);
+if(abs(x-nearestEdge.x) < 5){
+	if x < 700{
 		input_dir = 1;
 	}
-
+	else{
+		input_dir = -1;
+	}
 }
+//if close to edge, move
+else if(step >= 25){
+	
+	//pick a random direction/action
+			rando = random_range(0,1000)
+			if(rando < 500){
+				input_dir = 1
+			}
+			else {
+				input_dir = -1;
+			}
+			if((int64(rando)) % 3 == 0){
+				input_jump = true;
+			}
+
+
+	if(distance_to_object(oPlayer) < 40){
+		attack_input = true;
+		sprite_index = sprObstacle
+	}
+	else{
+		sprite_index = sprEnemy
+	}
+	step = 0;
+}
+step++
+	
 
 // Inherit the parent event
 event_inherited();
+
+//if above player, move left or right
+//if to left, move left, if to the right, move right

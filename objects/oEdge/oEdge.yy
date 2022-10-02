@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oEdge",
   "spriteId": {
-    "name": "sprEdge",
-    "path": "sprites/sprEdge/sprEdge.yy",
+    "name": "sprPlatform",
+    "path": "sprites/sprPlatform/sprPlatform.yy",
   },
   "solid": false,
   "visible": true,
