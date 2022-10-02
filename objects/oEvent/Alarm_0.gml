@@ -20,7 +20,8 @@ switch(global.current_event){
 		break;
 	case(Events.Ares): 
 		show_debug_message("Ares Event");
-		global.attackModifer = 2.5;
+		oPlayerManager1.attackMultiplier *= 2
+		oPlayerManager2.attackMultiplier *= 2
 		break;
 	case(Events.Artemis): 
 		show_debug_message("Artemis Event");
