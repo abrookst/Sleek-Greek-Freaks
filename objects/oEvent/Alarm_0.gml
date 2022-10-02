@@ -54,6 +54,13 @@ switch(global.current_event){
 		break;
 	case(Events.Hephaestus): 
 		show_debug_message("Hephaestus Event");
+		/*for (
+		if (int64(random(2)) == 1) {
+			
+		} else {
+			
+		}*/
+		created_obj2 = instance_create_layer(, , "Instances", oFireball);
 		break;
 	case(Events.Hera): 
 		show_debug_message("Hera Event");
