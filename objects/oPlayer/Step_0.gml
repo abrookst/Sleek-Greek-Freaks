@@ -2,13 +2,13 @@
 if team == 1{
 	input_dir = keyboard_check(vk_right) - keyboard_check(vk_left);
 	input_jump = keyboard_check(vk_up);
-	attack_input = keyboard_check_pressed(ord("M"));
+	attack_input = keyboard_check_pressed(ord("P"));
 	input_down = keyboard_check(vk_down);
 }
 else if team == 2 {
 	input_dir = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 	input_jump = keyboard_check(ord("W"));
-	attack_input = keyboard_check_pressed(ord("E"));
+	attack_input = keyboard_check_pressed(ord("R"));
 	input_down = keyboard_check(ord("S"));
 }
 if (input_dir != 0){//Change sprite facing direction based on inputs
@@ -122,10 +122,10 @@ if place_meeting(x+ xVelocity, y, oCollidableParent){
 //Get unstuck
 if place_meeting(x, y, oCollidableParent){
 	show_debug_message("STUCK")
-	while place_meeting(x, y, oCollidableParent){
+	/*while place_meeting(x, y, oCollidableParent){
 		y-=1;
 		x+=1;
-	}
+	}*/
 }
 
 x += xVelocity;
