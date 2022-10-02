@@ -30,8 +30,6 @@ switch(global.current_event){
 		break;
 	case(Events.Apollo): 
 		show_debug_message("Apollo Event");
-		oPlayer.runSpeed *= 2;
-		global.speedChanged = true;
 		break;
 	case(Events.Ares): 
 		show_debug_message("Ares Event");
@@ -62,6 +60,8 @@ switch(global.current_event){
 		break;
 	case(Events.Hermes): 
 		show_debug_message("Hermes Event");
+		oPlayer.runSpeed *= 2;
+		global.speedChanged = true;
 		break;
 	case(Events.Poseidon):
 		show_debug_message("Poseidon Event");
