@@ -8,6 +8,6 @@ if (global.lock1) {
 			room_goto(StageSelect);
 		}
 	} else {
-		room_goto(stage1);
+		room_goto(sp1);
 	}
 }
