@@ -1,3 +1,9 @@
+if (global.mode == 1) {
+	
+} else {
+	
+}
+
 global.selectedP1 = 1;
 global.selectedP2 = 1;
 

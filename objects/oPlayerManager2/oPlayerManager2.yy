@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "playerManager",
+  "name": "oPlayerManager2",
   "spriteId": null,
   "solid": false,
   "visible": true,

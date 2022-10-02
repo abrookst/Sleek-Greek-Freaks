@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oCharSelectButton",
+  "name": "oSingleCharSelectButton",
   "spriteId": {
     "name": "sprCharSelectButton",
     "path": "sprites/sprCharSelectButton/sprCharSelectButton.yy",
