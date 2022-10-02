@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+event_inherited();
+
 if(team == 1){
 	switch(room){
 		case stage1: respawnedPlayer = instance_create_layer(256, 224, "Instances", oPandora); break;
