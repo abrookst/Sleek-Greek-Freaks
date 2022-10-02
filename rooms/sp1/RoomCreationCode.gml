@@ -9,7 +9,7 @@ else if(global.character1 == 2){
     instance_create_layer(256, 224, "Instances", oHercules)
 }
 else if(global.character1 == 3){
-    //instance_create_layer(256, 224, "Instances", oOdysseus)
+    instance_create_layer(256, 224, "Instances", oMedusa)
 }
 else if(global.character1 == 4){
     //instance_create_layer(256, 224, "Instances", oMedusa)
@@ -28,7 +28,7 @@ if global.mode == 2 {
 	    instance_create_layer(256, 224, "Instances", oHercules)
 	}
 	else if(global.character2 == 3){
-	    //instance_create_layer(256, 224, "Instances", oOdysseus)
+	    instance_create_layer(256, 224, "Instances", oMedusa)
 	}
 	else if(global.character2 == 4){
 	    //instance_create_layer(256, 224, "Instances", oMedusa)

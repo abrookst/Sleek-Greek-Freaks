@@ -19,13 +19,13 @@ if (global.cooldown1 <= 0) {
 		oArrow1.x = global.x12;
 		oArrow1.y = global.y12;
 	}
-	if (keyboard_check_pressed(vk_left) && !global.lock1) {
+	if (keyboard_check_pressed(vk_down) && !global.lock1) {
 		global.character1 = 3;
 		global.cooldown1 = 10;
 		oArrow1.x = global.x13;
 		oArrow1.y = global.y13;
 	}
-	if (keyboard_check_pressed(vk_down) && !global.lock1) {
+	if (keyboard_check_pressed(vk_left) && !global.lock1) {
 		global.character1 = 4;
 		global.cooldown1 = 10;
 		oArrow1.x = global.x14;

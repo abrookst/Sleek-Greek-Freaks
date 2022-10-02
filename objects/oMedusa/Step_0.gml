@@ -8,12 +8,12 @@ event_inherited();
 
 //Play animation
 if(attackCooldown > 0){
-	//sprite_index = sprHercAttack;
+	sprite_index = sprMedusaAttack;
 }
 else if !onGround and !touchLeft and !touchRight {
-	sprite_index = sprHercJump;;
+	sprite_index = sprMedusaJump;;
 } else if input_dir == 0 {
-	sprite_index = sprHercStand;
+	sprite_index = sprMedusaStand;
 } else {
-	sprite_index = sprHercWalk;
+	sprite_index = sprMedusaWalk;
 }
