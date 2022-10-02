@@ -3,6 +3,9 @@
 
 created_obj = instance_create_layer(686, 361, "Instances", oWater)
 
+global.attackMultiplier1 = 1.0;
+global.attackMultiplier2 = 1.0;
+
 seconds = 10;
 frames = 60;
 

@@ -2,10 +2,10 @@
 // You can write your code in this editor
 hp = 100;
 if(team == 1){
-	oPlayerManager2.points++;
+	global.points2++;
 }
 else{
-	oPlayerManager1.points++;
+	global.points1++;
 }
 switch(room){
 	case stage1: instance_create_layer(600, 224, "Instances", oPlayer); break;

@@ -1,6 +1,7 @@
 //Create player managers, locks + cooldowns for char select, and coords to move arrows to
 
-instance_create_layer(0,0,"Instances",oPlayerManager1);
+//instance_create_layer(0,0,"Instances",oPlayerManager1);
+global.character1 = 1;
 global.lock1 = false;
 global.cooldown1 = 0;
 
@@ -18,7 +19,8 @@ oArrow1.image_yscale = .5;
 oArrow1.depth = 1;
 
 if (global.mode == 2) {
-	instance_create_layer(0,0,"Instances",oPlayerManager2);
+	//instance_create_layer(0,0,"Instances",oPlayerManager2);
+	global.character2 = 1;
 	global.lock2 = false;
 	global.cooldown2 = 0;
 	

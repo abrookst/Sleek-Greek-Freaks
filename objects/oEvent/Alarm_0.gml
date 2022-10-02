@@ -5,7 +5,7 @@ global.current_event = irandom(Events.total-1);
 
 //Alarm is called 
 alarm_set(0, frames*seconds);
-instance_destroy(created_obj)
+if created_obj instance_destroy(created_obj);
 
 // For each event, put in the switch case
 // what should happen every 10 seconds
@@ -21,8 +21,8 @@ switch(global.current_event){
 		break;
 	case(Events.Ares): 
 		show_debug_message("Ares Event");
-		oPlayerManager1.attackMultiplier *= 2
-		oPlayerManager2.attackMultiplier *= 2
+		global.attackMultiplier1 *= 2
+		global.attackMultiplier2 *= 2
 		break;
 	case(Events.Artemis): 
 		show_debug_message("Artemis Event");
