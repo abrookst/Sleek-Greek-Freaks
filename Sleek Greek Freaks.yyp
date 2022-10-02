@@ -82,7 +82,8 @@
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},},
     {"roomId":{"name":"CharSelect","path":"rooms/CharSelect/CharSelect.yy",},},
-    {"roomId":{"name":"test","path":"rooms/test/test.yy",},}
+    {"roomId":{"name":"test","path":"rooms/test/test.yy",},},
+    {"roomId":{"name":"Controls","path":"rooms/Controls/Controls.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
