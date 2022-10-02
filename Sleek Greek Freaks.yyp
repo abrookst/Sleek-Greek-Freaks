@@ -10,6 +10,7 @@
     {"id":{"name":"stage4","path":"rooms/stage4/stage4.yy",},"order":8,},
     {"id":{"name":"sprEdge","path":"sprites/sprEdge/sprEdge.yy",},"order":8,},
     {"id":{"name":"oP2Select","path":"objects/oP2Select/oP2Select.yy",},"order":12,},
+    {"id":{"name":"sprTitle","path":"sprites/sprTitle/sprTitle.yy",},"order":40,},
     {"id":{"name":"sprPandoraPlaceholder","path":"sprites/sprPandoraPlaceholder/sprPandoraPlaceholder.yy",},"order":17,},
     {"id":{"name":"oP3Select","path":"objects/oP3Select/oP3Select.yy",},"order":13,},
     {"id":{"name":"sprConfirmButton","path":"sprites/sprConfirmButton/sprConfirmButton.yy",},"order":32,},
@@ -34,6 +35,7 @@
     {"id":{"name":"sprBackToTitle","path":"sprites/sprBackToTitle/sprBackToTitle.yy",},"order":36,},
     {"id":{"name":"sprBackButton","path":"sprites/sprBackButton/sprBackButton.yy",},"order":27,},
     {"id":{"name":"sprWater","path":"sprites/sprWater/sprWater.yy",},"order":2,},
+    {"id":{"name":"sprStage4","path":"sprites/sprStage4/sprStage4.yy",},"order":41,},
     {"id":{"name":"fScore","path":"fonts/fScore/fScore.yy",},"order":0,},
     {"id":{"name":"sp1","path":"rooms/sp1/sp1.yy",},"order":9,},
     {"id":{"name":"oP1Select","path":"objects/oP1Select/oP1Select.yy",},"order":11,},
@@ -96,7 +98,6 @@
     {"id":{"name":"oEdge","path":"objects/oEdge/oEdge.yy",},"order":10,},
     {"id":{"name":"oArrow","path":"objects/oArrow/oArrow.yy",},"order":22,},
     {"id":{"name":"sprPlatform","path":"sprites/sprPlatform/sprPlatform.yy",},"order":16,},
-    {"id":{"name":"sprTitle","path":"sprites/sprTitle/sprTitle.yy",},"order":3,},
     {"id":{"name":"oPlatform","path":"objects/oPlatform/oPlatform.yy",},"order":17,},
   ],
   "Options": [
