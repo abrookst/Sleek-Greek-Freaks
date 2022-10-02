@@ -18,8 +18,8 @@ if (input_dir != 0){//Change sprite facing direction based on inputs
 //Check touching
 onGround = place_meeting(x, y+1, oBarrier)
 if (!input_down) {
-	platform = instance_place(x, y+10, oPlatform);
-	if platform and y < platform.y+10 {
+	platform = instance_place(x, y+1, oPlatform);
+	if platform and y < platform.y+1 {
 		onGround = true;
 	}
 }
@@ -55,7 +55,7 @@ if onGround {
 	}
 }
 
-if input_jump and !stunned and jumpCooldown <= 0 {
+if input_jump and !stunned and jumpCooldown <= 0 and yVelocity >= -1 {
 	if coyote_time <= 6 {//Normal Jump (with coyote time)
 		yVelocity = -jumpForce;
 		coyote_time += 10;
@@ -73,7 +73,7 @@ if attack_input and !stunned and attackCooldown==0{
 	attackCooldown = 26;
 }
 if attackCooldown == 8 and !stunned {
-	attacked = collision_circle(x+(64*-image_xscale), y-72, 32, oPlayer, false, true);
+	attacked = collision_circle(x+((sprite_width/4)*-image_xscale), y-(sprite_height/2), sprite_width/3, oPlayer, false, true);
 	if attacked and attacked.stunned <= 0 {
 		//show_debug_message("Hit!")
 		if(team == 1){
@@ -82,7 +82,7 @@ if attackCooldown == 8 and !stunned {
 		else{
 			attacked.hp -= 10 * oPlayerManager1.attackMultiplier
 		}
-		attacked.stunned = xKnockback + yKnockback;
+		attacked.stunned = xKnockback + yKnockback + 3;
 		attacked.yVelocity = -yKnockback;
 		attacked.xVelocity = -image_xscale * xKnockback;
 		if(attacked.hp <= 0){
@@ -103,8 +103,8 @@ if place_meeting(x, y+yVelocity, oCollidableParent){
 }
 if !input_down and yVelocity > 0 {
 	platform = instance_place(x, y+yVelocity, oPlatform);
-	if platform and y < platform.y+10 {
-		while !place_meeting(x, y+10, platform){
+	if platform and y < platform.y+1 {
+		while !place_meeting(x, y+1, platform){
 			y+=1;
 		}
 		yVelocity = 0;
