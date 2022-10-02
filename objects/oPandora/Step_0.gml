@@ -7,7 +7,11 @@
 event_inherited();
 
 //Play animation
-if(attackCooldown > 0){
+if stunned > 0 {
+	sprite_index = sprPandoraAttack
+	image_index = 1;
+}
+else if(attackCooldown > 0){
 	sprite_index = sprPandoraAttack;
 }
 else if !onGround and !touchLeft and !touchRight {

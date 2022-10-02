@@ -1,13 +1,13 @@
 //Get inputs
 if team == 1{
 	input_dir = keyboard_check(vk_right) - keyboard_check(vk_left);
-	input_jump = keyboard_check(ord("N"));
+	input_jump = keyboard_check(vk_up);
 	attack_input = keyboard_check_pressed(ord("M"));
 	input_down = keyboard_check(vk_down);
 }
 else if team == 2 {
 	input_dir = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-	input_jump = keyboard_check(ord("Q"));
+	input_jump = keyboard_check(ord("W"));
 	attack_input = keyboard_check_pressed(ord("E"));
 	input_down = keyboard_check(ord("S"));
 }
@@ -69,11 +69,10 @@ if input_jump and !stunned and jumpCooldown <= 0 {
 	}
 }
 
-if attack_input and !stunned {
+if attack_input and !stunned and attackCooldown==0{
 	attackCooldown = 26;
 }
-if attackCooldown == 1{
-	attackCooldown = 0;
+if attackCooldown == 8 and !stunned {
 	attacked = collision_circle(x+(64*-image_xscale), y-72, 32, oPlayer, false, true);
 	if attacked and attacked.stunned <= 0 {
 		//show_debug_message("Hit!")
@@ -91,7 +90,7 @@ if attackCooldown == 1{
 		}
 	}
 }
-if attackCooldown > 1{
+if attackCooldown > 0{
 	attackCooldown -= 1;
 }
 
