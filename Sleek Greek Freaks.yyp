@@ -7,6 +7,7 @@
     {"id":{"name":"oPlayerManager1","path":"objects/oPlayerManager1/oPlayerManager1.yy",},"order":18,},
     {"id":{"name":"sprStage1","path":"sprites/sprStage1/sprStage1.yy",},"order":21,},
     {"id":{"name":"sprArrowp2","path":"sprites/sprArrowp2/sprArrowp2.yy",},"order":24,},
+    {"id":{"name":"oEnemyManager","path":"objects/oEnemyManager/oEnemyManager.yy",},"order":31,},
     {"id":{"name":"sprPlayer4","path":"sprites/sprPlayer4/sprPlayer4.yy",},"order":13,},
     {"id":{"name":"stage4","path":"rooms/stage4/stage4.yy",},"order":8,},
     {"id":{"name":"sprEdge","path":"sprites/sprEdge/sprEdge.yy",},"order":8,},

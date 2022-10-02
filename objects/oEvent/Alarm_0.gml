@@ -50,7 +50,7 @@ switch(global.current_event){
 		break;
 	case(Events.Poseidon):
 		show_debug_message("Poseidon Event");
-		
+		created_obj = instance_create_layer(686, 361, "Instances", oWater)
 		break;
 	case(Events.Zeus): 
 		show_debug_message("Zeus Event");

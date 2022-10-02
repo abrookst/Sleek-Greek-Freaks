@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.attackModifer = 1.0;
+created_obj = instance_create_layer(686, 361, "Instances", oWater)
 
 seconds = 10;
 frames = 60;
