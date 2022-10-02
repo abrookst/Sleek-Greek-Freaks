@@ -70,19 +70,19 @@ if input_jump and !stunned and jumpCooldown <= 0 and yVelocity >= -1 {
 }
 
 if attack_input and !stunned and attackCooldown==0{
-	attackCooldown = 26;
+	attackCooldown = attackDuration;
 }
 if attackCooldown == 8 and !stunned {
-	attacked = collision_circle(x+(-image_xscale*30), y-(sprite_height/2), sprite_width/3, oPlayer, false, true);
+	attacked = collision_circle(x+(-image_xscale*attackRange), y-(sprite_height/2), attackRange, oPlayer, false, true);
 	if attacked and attacked.stunned <= 0 {
 		//show_debug_message("Hit!")
 		if(team == 1){
-			attacked.hp -= 10 * global.attackMultiplier1
+			attacked.hp -= attackDamage * global.attackMultiplier1
 		}
 		else if (team == 2){
-			attacked.hp -= 10 * global.attackMultiplier2
+			attacked.hp -= attackDamage * global.attackMultiplier2
 		} else {
-			attacked.hp -= 10;
+			attacked.hp -= attackDamage;
 		}
 		attacked.stunned = xKnockback + yKnockback + 3;
 		attacked.yVelocity = -yKnockback;
