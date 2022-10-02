@@ -5,6 +5,7 @@ global.current_event = irandom(Events.total-1);
 
 //Alarm is called 
 alarm_set(0, frames*seconds);
+instance_destroy(created_obj)
 
 // For each event, put in the switch case
 // what should happen every 10 seconds
@@ -49,6 +50,7 @@ switch(global.current_event){
 		break;
 	case(Events.Poseidon):
 		show_debug_message("Poseidon Event");
+		
 		break;
 	case(Events.Zeus): 
 		show_debug_message("Zeus Event");
