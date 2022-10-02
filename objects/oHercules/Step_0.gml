@@ -8,16 +8,16 @@ event_inherited();
 
 //Play animation
 if stunned > 0 {
-	sprite_index = sprHerculesAttack
+	sprite_index = sprHercAttack
 	image_index = 1;
 }
 else if(attackCooldown > 0){
-	sprite_index = sprHerculesaAttack;
+	sprite_index = sprHercAttack;
 }
 else if !onGround and !touchLeft and !touchRight {
-	sprite_index = sprHerculesJump;;
+	sprite_index = sprHercJump;;
 } else if input_dir == 0 {
-	sprite_index = sprHerculesStand;
+	sprite_index = sprHercStand;
 } else {
-	sprite_index = sprHerculesWalk;
+	sprite_index = sprHercsWalk;
 }

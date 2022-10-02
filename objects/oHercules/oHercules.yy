@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oHercules",
   "spriteId": {
-    "name": "sprObstacle",
-    "path": "sprites/sprObstacle/sprObstacle.yy",
+    "name": "sprHercWalk",
+    "path": "sprites/sprHercWalk/sprHercWalk.yy",
   },
   "solid": false,
   "visible": true,
