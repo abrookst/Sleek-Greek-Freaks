@@ -1,3 +1,6 @@
+global.points1 = 0
+global.points2 = 0
+
 player1 = 0
 if(global.character1 == 1){
     player1 = instance_create_layer(256, 224, "Instances", oPandora)
