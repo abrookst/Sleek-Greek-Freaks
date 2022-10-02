@@ -39,6 +39,7 @@
     {"id":{"name":"oP1Select","path":"objects/oP1Select/oP1Select.yy",},"order":11,},
     {"id":{"name":"oSingleCharSelectButton","path":"objects/oSingleCharSelectButton/oSingleCharSelectButton.yy",},"order":18,},
     {"id":{"name":"oObstacle","path":"objects/oObstacle/oObstacle.yy",},"order":2,},
+    {"id":{"name":"sprControlsScreen","path":"sprites/sprControlsScreen/sprControlsScreen.yy",},"order":33,},
     {"id":{"name":"oExit","path":"objects/oExit/oExit.yy",},"order":6,},
     {"id":{"name":"sprStage2Button","path":"sprites/sprStage2Button/sprStage2Button.yy",},"order":31,},
     {"id":{"name":"sprSinglePlayerButton","path":"sprites/sprSinglePlayerButton/sprSinglePlayerButton.yy",},"order":15,},
