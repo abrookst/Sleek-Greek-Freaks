@@ -57,6 +57,7 @@
     {"id":{"name":"oLightning","path":"objects/oLightning/oLightning.yy",},"order":31,},
     {"id":{"name":"CharSelect","path":"rooms/CharSelect/CharSelect.yy",},"order":3,},
     {"id":{"name":"sp3","path":"rooms/sp3/sp3.yy",},"order":11,},
+    {"id":{"name":"sprStage4","path":"sprites/sprStage4/sprStage4.yy",},"order":41,},
     {"id":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},"order":3,},
     {"id":{"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},"order":2,},
     {"id":{"name":"sprStage1Button","path":"sprites/sprStage1Button/sprStage1Button.yy",},"order":30,},
