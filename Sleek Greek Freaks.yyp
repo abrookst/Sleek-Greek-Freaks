@@ -27,6 +27,7 @@
     {"id":{"name":"sprArrowP1","path":"sprites/sprArrowP1/sprArrowP1.yy",},"order":23,},
     {"id":{"name":"sprStage2","path":"sprites/sprStage2/sprStage2.yy",},"order":22,},
     {"id":{"name":"sprWater","path":"sprites/sprWater/sprWater.yy",},"order":2,},
+    {"id":{"name":"fScore","path":"fonts/fScore/fScore.yy",},"order":0,},
     {"id":{"name":"sp1","path":"rooms/sp1/sp1.yy",},"order":9,},
     {"id":{"name":"oP1Select","path":"objects/oP1Select/oP1Select.yy",},"order":11,},
     {"id":{"name":"oSingleCharSelectButton","path":"objects/oSingleCharSelectButton/oSingleCharSelectButton.yy",},"order":18,},

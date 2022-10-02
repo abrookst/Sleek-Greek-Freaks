@@ -7,6 +7,7 @@ if (room_get_name(room) != "TitleScreen" && room_get_name(room) != "Controls" &&
 	draw_healthbar(31, 31, 191, 62, pc, c_black, c_red, c_lime, 0, true, true)
 }
 draw_set_colour(c_red);
-draw_text(211, 62, points);
+draw_set_font(fScore)
+draw_text(211, 46, points);
 
 
