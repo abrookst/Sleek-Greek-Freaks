@@ -72,7 +72,7 @@ if input_jump and !stunned and jumpCooldown <= 0 and yVelocity >= -1 {
 if attack_input and !stunned and attackCooldown==0{
 	attackCooldown = attackDuration;
 }
-if attackCooldown == attackFrame and !stunned {
+if attackCooldown == 8 and !stunned {
 	attacked = collision_circle(x+(-image_xscale*attackRange), y-(sprite_height/2), attackRange, oPlayer, false, true);
 	if attacked and attacked.stunned <= 0 {
 		//show_debug_message("Hit!")
