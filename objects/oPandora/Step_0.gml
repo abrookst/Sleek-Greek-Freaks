@@ -14,3 +14,6 @@ if !onGround and !touchLeft and !touchRight {
 } else {
 	sprite_index = sprPandoraWalk;
 }
+if(attack_input){
+	sprite_index = sprPandoraAttack;
+}
