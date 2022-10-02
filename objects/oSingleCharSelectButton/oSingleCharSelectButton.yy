@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oSingleCharSelectButton",
   "spriteId": {
-    "name": "sprCharSelectButton",
-    "path": "sprites/sprCharSelectButton/sprCharSelectButton.yy",
+    "name": "sprSinglePlayerButton",
+    "path": "sprites/sprSinglePlayerButton/sprSinglePlayerButton.yy",
   },
   "solid": false,
   "visible": true,

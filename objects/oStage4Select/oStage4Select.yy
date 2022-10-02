@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oMultiCharSelectButton",
+  "name": "oStage4Select",
   "spriteId": {
-    "name": "sprMultiPlayerButton",
-    "path": "sprites/sprMultiPlayerButton/sprMultiPlayerButton.yy",
+    "name": "sprStage4Button",
+    "path": "sprites/sprStage4Button/sprStage4Button.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
