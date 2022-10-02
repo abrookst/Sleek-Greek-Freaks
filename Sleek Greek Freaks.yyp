@@ -72,6 +72,7 @@
     {"id":{"name":"oBarrier","path":"objects/oBarrier/oBarrier.yy",},"order":1,},
     {"id":{"name":"sprHercStand","path":"sprites/sprHercStand/sprHercStand.yy",},"order":39,},
     {"id":{"name":"StageSelect","path":"rooms/StageSelect/StageSelect.yy",},"order":13,},
+    {"id":{"name":"sprArrowCPU","path":"sprites/sprArrowCPU/sprArrowCPU.yy",},"order":47,},
     {"id":{"name":"sprControls","path":"sprites/sprControls/sprControls.yy",},"order":26,},
     {"id":{"name":"oMultiCharSelectButton","path":"objects/oMultiCharSelectButton/oMultiCharSelectButton.yy",},"order":5,},
     {"id":{"name":"oEvent","path":"objects/oEvent/oEvent.yy",},"order":15,},

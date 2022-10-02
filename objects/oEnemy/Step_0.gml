@@ -51,5 +51,39 @@ step++
 // Inherit the parent event
 event_inherited();
 
-//if above player, move left or right
-//if to left, move left, if to the right, move right
+//Play animation
+if room == sp1 {
+	if !onGround and !touchLeft and !touchRight {
+		sprite_index = sprHercJump;;
+	} else if input_dir == 0 {
+		sprite_index = sprHercStand;
+	} else {
+		sprite_index = sprHercWalk;
+	}
+} else if room == sp2 {
+	if(attackCooldown > 0){
+		sprite_index = sprMedusaAttack;
+	}
+	else if !onGround and !touchLeft and !touchRight {
+		sprite_index = sprMedusaJump;
+	} else if input_dir == 0 {
+		sprite_index = sprMedusaStand;
+	} else {
+		sprite_index = sprMedusaWalk;
+	}
+} else if room == sp4 {
+	if stunned > 0 {
+		sprite_index = sprPandoraAttack
+		image_index = 1;
+	}
+	else if(attackCooldown > 0){
+		sprite_index = sprPandoraAttack;
+	}
+	else if !onGround and !touchLeft and !touchRight {
+		sprite_index = sprPandoraJump;;
+	} else if input_dir == 0 {
+		sprite_index = sprPandoraStand;
+	} else {
+		sprite_index = sprPandoraWalk;
+	}
+}

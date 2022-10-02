@@ -4,9 +4,12 @@ if(team == 1){
 	draw_self()
 	draw_sprite(sprArrowP1, 0, x, y-180)
 }
-else{
+else if team == 2{
 	draw_self()
 	draw_sprite(sprArrowp2, 0, x, y-180)
+} else {
+	draw_self()
+	draw_sprite(sprArrowCPU, 0, x, y-180)
 }
 
 var pc;

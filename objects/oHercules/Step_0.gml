@@ -8,7 +8,7 @@ event_inherited();
 
 //Play animation
 if(attackCooldown > 0){
-	//sprite_index = sprHercAttack;
+	sprite_index = sprHercAttack;
 }
 else if !onGround and !touchLeft and !touchRight {
 	sprite_index = sprHercJump;;
