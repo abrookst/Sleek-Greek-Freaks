@@ -1,7 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.current_event = irandom(Events.total-1);
+//global.current_event = irandom(Events.total-1);
+global.current_event = Events.Apollo; //for testing comment out after done
+if (global.attackChanged) {
+	show_debug_message("Attack reset");
+	global.attackMultiplier1 /= 2;
+	global.attackMultiplier2 /= 2;
+	global.attackChanged = false;
+}
+if (global.speedChanged) {
+	show_debug_message("Speed reset");
+	oPlayer.runSpeed /= 2;
+	global.speedChanged = false;
+}
 
 //Alarm is called 
 alarm_set(0, frames*seconds);
@@ -18,11 +30,14 @@ switch(global.current_event){
 		break;
 	case(Events.Apollo): 
 		show_debug_message("Apollo Event");
+		oPlayer.runSpeed *= 2;
+		global.speedChanged = true;
 		break;
 	case(Events.Ares): 
 		show_debug_message("Ares Event");
-		global.attackMultiplier1 *= 2
-		global.attackMultiplier2 *= 2
+		global.attackMultiplier1 *= 2;
+		global.attackMultiplier2 *= 2;
+		global.attackChanged = true;
 		break;
 	case(Events.Artemis): 
 		show_debug_message("Artemis Event");
@@ -54,5 +69,6 @@ switch(global.current_event){
 		break;
 	case(Events.Zeus): 
 		show_debug_message("Zeus Event");
+		created_obj = instance_create_layer(random(room_width - 161), 0, "Instances", oLightning);
 		break;
 }

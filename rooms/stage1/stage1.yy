@@ -50,6 +50,7 @@
     {"name":"inst_5464DFF0","path":"rooms/stage1/stage1.yy",},
     {"name":"inst_38386D20","path":"rooms/stage1/stage1.yy",},
     {"name":"inst_1AC36332","path":"rooms/stage1/stage1.yy",},
+    {"name":"inst_40426BFF","path":"rooms/stage1/stage1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
