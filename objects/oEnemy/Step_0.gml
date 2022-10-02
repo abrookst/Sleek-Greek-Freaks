@@ -5,23 +5,25 @@ input_jump = false;
 attack_input = false;
 input_down = false;
 
-//if close to edge, move
-if(step == 25){
-	if(distance_to_object(oEdge) < 2){
-		if(input_dir = 1){
-			input_dir = -1;
-		}
-		else{
-			input_dir = 1;
-		}
+//if on wall, jump in opposite direction regardless
+if(touchLeft or touchRight){
+	input_jump = true;
+	input_dir = -input_dir;
+}
+
+nearestEdge = instance_nearest(x,y,oEdge);
+if(abs(x-nearestEdge.x) < 5){
+	if x < 700{
+		input_dir = 1;
 	}
-	//if on wall, jump in opposite direction regardless
-	else if(touchLeft or touchRight){
-		input_jump = true;
-		input_dir = -input_dir;
-	}
-	//pick a random direction/action
 	else{
+		input_dir = -1;
+	}
+}
+//if close to edge, move
+else if(step >= 25){
+	
+	//pick a random direction/action
 			rando = random_range(0,1000)
 			if(rando < 500){
 				input_dir = 1
@@ -29,11 +31,10 @@ if(step == 25){
 			else {
 				input_dir = -1;
 			}
-			if(rando % 3 == 0){
+			if((int64(rando)) % 3 == 0){
 				input_jump = true;
 			}
 
-	}
 
 	if(distance_to_object(oPlayer) < 40){
 		attack_input = true;
