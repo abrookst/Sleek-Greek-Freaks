@@ -47,6 +47,8 @@
     {"id":{"name":"sprSinglePlayerButton","path":"sprites/sprSinglePlayerButton/sprSinglePlayerButton.yy",},"order":15,},
     {"id":{"name":"sprExit","path":"sprites/sprExit/sprExit.yy",},"order":5,},
     {"id":{"name":"sprPlayer2","path":"sprites/sprPlayer2/sprPlayer2.yy",},"order":11,},
+    {"id":{"name":"sprHercWalk","path":"sprites/sprHercWalk/sprHercWalk.yy",},"order":37,},
+    {"id":{"name":"sprHercJump","path":"sprites/sprHercJump/sprHercJump.yy",},"order":38,},
     {"id":{"name":"LoseScreen","path":"rooms/LoseScreen/LoseScreen.yy",},"order":14,},
     {"id":{"name":"mMenu","path":"sounds/mMenu/mMenu.yy",},"order":0,},
     {"id":{"name":"sprArrow2","path":"sprites/sprArrow2/sprArrow2.yy",},"order":19,},
