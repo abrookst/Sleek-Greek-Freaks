@@ -1,4 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-oPlayer.lightningCooldown = false;
+if (!fireballCooldown) {
+	hp -= 10;
+	fireballCooldown = true;
+}

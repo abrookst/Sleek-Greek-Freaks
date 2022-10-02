@@ -6,3 +6,7 @@ if (x < room_width/2) {
 } else {
 	image_index = 0; //face left
 }
+
+if (x > room_width || x < 0) {
+	instance_destroy(object_index);
+}
