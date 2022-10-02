@@ -34,7 +34,7 @@ if (global.cooldown1 <= 0) {
 }
 
 global.cooldown1--;
-show_debug_message("P1: " + string(oPlayerManager1.character) + ", Cooldown: " + string(global.cooldown1));
+//show_debug_message("P1: " + string(oPlayerManager1.character) + ", Cooldown: " + string(global.cooldown1));
 
 if (global.mode == 2) {
 	if (global.cooldown2 <= 0) {
@@ -72,5 +72,5 @@ if (global.mode == 2) {
 		}
 	}
 	global.cooldown2--;
-	show_debug_message("P2: " + string(oPlayerManager2.character) + ", Cooldown: " + string(global.cooldown2));
+	//show_debug_message("P2: " + string(oPlayerManager2.character) + ", Cooldown: " + string(global.cooldown2));
 }
