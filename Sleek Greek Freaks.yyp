@@ -64,6 +64,7 @@
     {"id":{"name":"oStage3Select","path":"objects/oStage3Select/oStage3Select.yy",},"order":27,},
     {"id":{"name":"sprStage4Button","path":"sprites/sprStage4Button/sprStage4Button.yy",},"order":29,},
     {"id":{"name":"oBarrier","path":"objects/oBarrier/oBarrier.yy",},"order":1,},
+    {"id":{"name":"sprHercStand","path":"sprites/sprHercStand/sprHercStand.yy",},"order":39,},
     {"id":{"name":"StageSelect","path":"rooms/StageSelect/StageSelect.yy",},"order":13,},
     {"id":{"name":"sprControls","path":"sprites/sprControls/sprControls.yy",},"order":26,},
     {"id":{"name":"oMultiCharSelectButton","path":"objects/oMultiCharSelectButton/oMultiCharSelectButton.yy",},"order":5,},
