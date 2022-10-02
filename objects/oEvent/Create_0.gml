@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-created_obj = instance_create_layer(686, 361, "Instances", oWater)
-
 global.attackMultiplier1 = 1.0;
 global.attackMultiplier2 = 1.0;
 global.attackChanged = false;
@@ -14,16 +12,16 @@ frames = 60;
 //Enum for all events
 enum Events {
 	None,
-	Aphrodite,
-	Apollo,
+	//Aphrodite,
+	//Apollo,
 	Ares,
-	Artemis,
-	Athena,
-	Demeter,
-	Dionysus,
-	Hades,
+	//Artemis,
+	//Athena,
+	//Demeter,
+	//Dionysus,
+	//Hades,
 	Hephaestus,
-	Hera,
+	//Hera,
 	Hermes,
 	Poseidon,
 	Zeus,
