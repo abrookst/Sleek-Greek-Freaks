@@ -73,9 +73,18 @@ if attack_input and !stunned {
 	attacked = collision_circle(x+(64*-image_xscale), y-72, 32, oPlayer, false, true);
 	if attacked and attacked.stunned <= 0 {
 		//show_debug_message("Hit!")
+		if(team == 1){
+			hp -= 10 * oPlayerManager2.attackMultiplier
+		}
+		else{
+			hp -= 10 * oPlayerManager1.attackMultiplier
+		}
 		attacked.stunned = xKnockback + yKnockback;
 		attacked.yVelocity = -yKnockback;
 		attacked.xVelocity = -image_xscale * xKnockback;
+		if(hp <= 0){
+			instance_destroy()
+		}
 	}
 }
 
