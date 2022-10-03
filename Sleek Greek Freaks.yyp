@@ -78,6 +78,7 @@
     {"id":{"name":"oEvent","path":"objects/oEvent/oEvent.yy",},"order":15,},
     {"id":{"name":"sprStart","path":"sprites/sprStart/sprStart.yy",},"order":16,},
     {"id":{"name":"oCollidableParent","path":"objects/oCollidableParent/oCollidableParent.yy",},"order":16,},
+    {"id":{"name":"sprOdysseusWalk","path":"sprites/sprOdysseusWalk/sprOdysseusWalk.yy",},"order":48,},
     {"id":{"name":"stage1","path":"rooms/stage1/stage1.yy",},"order":4,},
     {"id":{"name":"sprPlayer1","path":"sprites/sprPlayer1/sprPlayer1.yy",},"order":10,},
     {"id":{"name":"sprArrow1","path":"sprites/sprArrow1/sprArrow1.yy",},"order":18,},
