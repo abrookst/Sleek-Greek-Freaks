@@ -7,8 +7,6 @@ if (image_index == 1) {
 	x -= 5;
 }
 
-if (x < 0) {
-	
-} else if (x > room_width) {
-	
+if (x > room_width || x < 0) {
+	instance_destroy(object_index);
 }

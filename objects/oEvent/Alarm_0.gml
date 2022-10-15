@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //global.current_event = irandom(Events.total-1);
-global.current_event = Events.Zeus; //for testing comment out after done
+global.current_event = Events.Hephaestus; //for testing comment out after done
 if (global.attackChanged) {
 	show_debug_message("Attack reset");
 	global.attackMultiplier1 /= 2;
