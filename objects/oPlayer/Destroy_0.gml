@@ -2,10 +2,15 @@
 // You can write your code in this editor
 
 if(team == 1){
-	global.points2++;
+	if global.points2++ >= 5 {
+		room_goto(WinScreen);
+	}
+	
 }
 else{
-	global.points1++;
+	if global.points1++ >= 5 {
+		room_goto(WinScreen);
+	}
 }
 
 
