@@ -17,13 +17,13 @@
   ],
   "layers": [
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_332704AB","x":704.0,"y":256.0,"spriteId":{"name":"sprHercWalk","path":"sprites/sprHercWalk/sprHercWalk.yy",},"ignore":false,"headPosition":0.0,"rotation":0.0,"scaleX":-1.5,"scaleY":1.5,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"inheritItemSettings":false,},
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_7F7C1E07","x":1152.0,"y":544.0,"spriteId":{"name":"sprMedusaAttack","path":"sprites/sprMedusaAttack/sprMedusaAttack.yy",},"ignore":false,"headPosition":0.0,"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"inheritItemSettings":false,},
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_2C8D6918","x":704.0,"y":512.0,"spriteId":{"name":"sprPandoraAttack","path":"sprites/sprPandoraAttack/sprPandoraAttack.yy",},"ignore":false,"headPosition":0.0,"rotation":0.0,"scaleX":-1.5,"scaleY":1.5,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"inheritItemSettings":false,},
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_24EA15E0","x":1120.0,"y":256.0,"spriteId":{"name":"sprOdysseusWalk","path":"sprites/sprOdysseusWalk/sprOdysseusWalk.yy",},"ignore":false,"headPosition":0.0,"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"inheritItemSettings":false,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_332704AB","spriteId":{"name":"sprHercWalk","path":"sprites/sprHercWalk/sprHercWalk.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":-1.5,"scaleY":1.5,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":256.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_7F7C1E07","spriteId":{"name":"sprMedusaAttack","path":"sprites/sprMedusaAttack/sprMedusaAttack.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1152.0,"y":544.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_2C8D6918","spriteId":{"name":"sprPandoraAttack","path":"sprites/sprPandoraAttack/sprPandoraAttack.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":-1.5,"scaleY":1.5,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":512.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_24EA15E0","spriteId":{"name":"sprOdysseusWalk","path":"sprites/sprOdysseusWalk/sprOdysseusWalk.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1120.0,"y":256.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F343589","properties":[],"isDnd":false,"objectId":{"name":"oBackButton","path":"objects/oBackButton/oBackButton.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1184.0,"y":608.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_52AEE59B","properties":[],"isDnd":false,"objectId":{"name":"oBackToTitleButton","path":"objects/oBackToTitleButton/oBackToTitleButton.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.68,"scaleY":0.68,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1216.0,"y":608.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":{"name":"sprControlsScreen","path":"sprites/sprControlsScreen/sprControlsScreen.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":true,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
@@ -31,7 +31,7 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_1F343589","path":"rooms/Controls/Controls.yy",},
+    {"name":"inst_52AEE59B","path":"rooms/Controls/Controls.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
