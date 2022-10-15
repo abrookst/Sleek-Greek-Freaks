@@ -53,7 +53,10 @@ event_inherited();
 
 //Play animation
 if room == sp1 {
-	if !onGround and !touchLeft and !touchRight {
+	if(attackCooldown > 0){
+		sprite_index = sprHercAttack;
+	}
+	else if !onGround and !touchLeft and !touchRight {
 		sprite_index = sprHercJump;;
 	} else if input_dir == 0 {
 		sprite_index = sprHercStand;
