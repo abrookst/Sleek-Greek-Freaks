@@ -60,6 +60,12 @@ switch(global.current_event){
 			heightSubtract = 0;
 			if (room_get_name(room) == "stage1" || room_get_name(room) == "sp1") {
 				heightSubtract = 660;
+			} else if (room_get_name(room) == "stage2" || room_get_name(room) == "sp2") {
+				heightSubtract = 660;
+			} else if (room_get_name(room) == "stage3" || room_get_name(room) == "sp3") {
+				heightSubtract = 560;
+			} else if (room_get_name(room) == "stage4" || room_get_name(room) == "sp4") {
+				heightSubtract = 520;
 			}
 			if (int64(random(2)) == 1) {
 				created_obj2 = instance_create_layer(0, heightSubtract-int64(random(heightSubtract-oPlayer.y)), "Instances", oFireball);
