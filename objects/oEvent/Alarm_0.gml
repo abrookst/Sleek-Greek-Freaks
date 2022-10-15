@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //global.current_event = irandom(Events.total-1);
-global.current_event = Events.Hephaestus; //for testing comment out after done
+global.current_event = Events.Demeter; //for testing comment out after done
 if (global.attackChanged) {
 	show_debug_message("Attack reset");
 	global.attackMultiplier1 /= 2;
@@ -13,6 +13,18 @@ if (global.speedChanged) {
 	show_debug_message("Speed reset");
 	oPlayer.runSpeed /= 2;
 	global.speedChanged = false;
+}
+if (global.allChanged) {
+	show_debug_message("All stats reset");
+	global.attackMultiplier1 /= 1.5;
+	global.attackMultiplier2 /= 1.5;
+	oPlayer.runSpeed /= 1.5;
+	oPlayer.jumpForce /= 1.5;
+	oPlayer.wallJumpUpForce /= 1.5;
+	oPlayer.grav *= 1.5;
+	oPlayer.xKnockback /= 1.5;
+	oPlayer.yKnockback /= 1.5;
+	global.allChanged = false;
 }
 oPlayer.lightningCooldown = false;
 oPlayer.fireballCooldown = false;
@@ -27,9 +39,9 @@ switch(global.current_event){
 	case(Events.None): 
 		show_debug_message("No event"); 
 		break;
-	//case(Events.Aphrodite): 
-	//	show_debug_message("Aphrodite Event");
-	//	break;
+	case(Events.Aphrodite): 
+		show_debug_message("Aphrodite Event");
+		break;
 	//case(Events.Apollo): 
 	//	show_debug_message("Apollo Event");
 	//	break;
@@ -39,18 +51,27 @@ switch(global.current_event){
 		global.attackMultiplier2 *= 2;
 		global.attackChanged = true;
 		break;
-	//case(Events.Artemis): 
-	//	show_debug_message("Artemis Event");
-	//	break;
+	case(Events.Artemis): 
+		show_debug_message("Artemis Event");
+		break;
 	//case(Events.Athena): 
 	//	show_debug_message("Athena Event");
 	//	break;
-	//case(Events.Demeter): 
-	//	show_debug_message("Demeter Event");
-	//	break;
-	//case(Events.Dionysus): 
-	//	show_debug_message("Dionysus Event");
-	//	break;
+	case(Events.Demeter): 
+		show_debug_message("Demeter Event");
+		global.attackMultiplier1 *= 1.5;
+		global.attackMultiplier2 *= 1.5;
+		oPlayer.runSpeed *= 1.5;
+		oPlayer.jumpForce *= 1.5;
+		oPlayer.wallJumpUpForce *= 1.5;
+		oPlayer.grav /= 1.5;
+		oPlayer.xKnockback *= 1.5;
+		oPlayer.yKnockback *= 1.5;
+		global.allChanged = true;
+		break;
+	case(Events.Dionysus): 
+		show_debug_message("Dionysus Event");
+		break;
 	//case(Events.Hades): 
 	//	show_debug_message("Hades Event");
 	//	break;

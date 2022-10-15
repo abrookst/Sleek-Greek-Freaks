@@ -5,6 +5,7 @@ global.attackMultiplier1 = 1.0;
 global.attackMultiplier2 = 1.0;
 global.attackChanged = false;
 global.speedChanged = false;
+global.allChanged = false;
 
 seconds = 10;
 frames = 60;
@@ -12,13 +13,13 @@ frames = 60;
 //Enum for all events
 enum Events {
 	None,
-	//Aphrodite,
+	Aphrodite,
 	//Apollo,
 	Ares,
-	//Artemis,
+	Artemis,
 	//Athena,
-	//Demeter,
-	//Dionysus,
+	Demeter,
+	Dionysus,
 	//Hades,
 	Hephaestus,
 	//Hera,
