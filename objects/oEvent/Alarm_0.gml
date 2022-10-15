@@ -57,10 +57,14 @@ switch(global.current_event){
 	case(Events.Hephaestus): 
 		show_debug_message("Hephaestus Event");
 		for (var i = 0; i < int64(random(6)); i++) {
+			heightSubtract = 0;
+			if (room_get_name(room) == "stage1" || room_get_name(room) == "sp1") {
+				heightSubtract = 660;
+			}
 			if (int64(random(2)) == 1) {
-				created_obj2 = instance_create_layer(0, int64(random(room_height)), "Instances", oFireball);
+				created_obj2 = instance_create_layer(0, heightSubtract-int64(random(heightSubtract-oPlayer.y)), "Instances", oFireball);
 			} else {
-				created_obj2 = instance_create_layer(room_width, int64(random(room_height)), "Instances", oFireball);
+				created_obj2 = instance_create_layer(room_width, heightSubtract-int64(random(heightSubtract-oPlayer.y)), "Instances", oFireball);
 			}
 		}
 		break;
@@ -75,7 +79,6 @@ switch(global.current_event){
 	case(Events.Poseidon):
 		show_debug_message("Poseidon Event");
 		created_obj = instance_create_layer(room_width/2, room_height, "Instances", oWater);
-		//created_obj = instance_create_layer(686, 361, "Instances", oWater)
 		break;
 	case(Events.Zeus): 
 		show_debug_message("Zeus Event");

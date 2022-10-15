@@ -5,3 +5,7 @@ if (!lightningCooldown) {
 	hp -= 20;
 	lightningCooldown = true;
 }
+
+if (hp <= 0) {
+	instance_destroy();
+}

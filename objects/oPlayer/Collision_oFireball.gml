@@ -5,3 +5,7 @@ if (!fireballCooldown) {
 	hp -= 10;
 	fireballCooldown = true;
 }
+
+if (hp <= 0) {
+	instance_destroy();
+}
