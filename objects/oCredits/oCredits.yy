@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oCredits",
   "spriteId": {
-    "name": "sprControls",
-    "path": "sprites/sprControls/sprControls.yy",
+    "name": "sprCredits",
+    "path": "sprites/sprCredits/sprCredits.yy",
   },
   "solid": false,
   "visible": true,
