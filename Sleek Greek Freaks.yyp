@@ -10,6 +10,7 @@
     {"id":{"name":"stage4","path":"rooms/stage4/stage4.yy",},"order":8,},
     {"id":{"name":"sprEdge","path":"sprites/sprEdge/sprEdge.yy",},"order":7,},
     {"id":{"name":"oP2Select","path":"objects/oP2Select/oP2Select.yy",},"order":12,},
+    {"id":{"name":"oSprite","path":"objects/oSprite/oSprite.yy",},"order":36,},
     {"id":{"name":"sprPandoraPlaceholder","path":"sprites/sprPandoraPlaceholder/sprPandoraPlaceholder.yy",},"order":17,},
     {"id":{"name":"oP3Select","path":"objects/oP3Select/oP3Select.yy",},"order":13,},
     {"id":{"name":"oControls","path":"objects/oControls/oControls.yy",},"order":23,},
