@@ -93,7 +93,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sleek Greek Freaks",
-    "path": "Sleek Greek Freaks.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
 }
