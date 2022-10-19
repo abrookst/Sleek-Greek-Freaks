@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+event_inherited();
+
 switch(room){
 	case sp1: instance_create_layer(1120, 224, "Instances", oEnemy); break;
 	case sp2: instance_create_layer(1056, 224, "Instances", oEnemy);break;
