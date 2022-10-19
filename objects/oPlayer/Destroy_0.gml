@@ -3,20 +3,15 @@
 
 if(team == 1){
 	if ++global.points2 >= 5 {
-		global.winner = team;
+		global.winner = 2;
 		room_goto(WinScreen);
 	}
 	
 }
 else{
 	if ++global.points1 >= 5 {
-		global.winner = team;
-		if (team == 0) {
-			room_goto(LoseScreen);
-		}
-		else {
-			room_goto(WinScreen);
-		}
+		global.winner = 1;
+		room_goto(WinScreen);
 	}
 }
 
