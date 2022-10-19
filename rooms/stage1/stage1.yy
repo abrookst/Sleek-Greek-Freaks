@@ -40,7 +40,6 @@
     {"name":"inst_38170A7F","path":"rooms/stage1/stage1.yy",},
     {"name":"inst_5464DFF0","path":"rooms/stage1/stage1.yy",},
     {"name":"inst_2B08CF14","path":"rooms/stage1/stage1.yy",},
-    {"name":"inst_2280F1A0","path":"rooms/stage1/stage1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
