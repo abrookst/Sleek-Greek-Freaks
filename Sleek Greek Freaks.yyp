@@ -166,8 +166,6 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"sp1loss","path":"rooms/sp1loss/sp1loss.yy",},},
-    {"roomId":{"name":"sp1win","path":"rooms/sp1win/sp1win.yy",},},
     {"roomId":{"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},},
     {"roomId":{"name":"stage1","path":"rooms/stage1/stage1.yy",},},
     {"roomId":{"name":"stage2","path":"rooms/stage2/stage2.yy",},},
@@ -183,6 +181,8 @@
     {"roomId":{"name":"StageSelect","path":"rooms/StageSelect/StageSelect.yy",},},
     {"roomId":{"name":"LoseScreen","path":"rooms/LoseScreen/LoseScreen.yy",},},
     {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
+    {"roomId":{"name":"sp1win","path":"rooms/sp1win/sp1win.yy",},},
+    {"roomId":{"name":"sp1loss","path":"rooms/sp1loss/sp1loss.yy",},},
     {"roomId":{"name":"sp2win","path":"rooms/sp2win/sp2win.yy",},},
     {"roomId":{"name":"sp2loss","path":"rooms/sp2loss/sp2loss.yy",},},
     {"roomId":{"name":"sp3win","path":"rooms/sp3win/sp3win.yy",},},
