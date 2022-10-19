@@ -66,6 +66,7 @@
     {"id":{"name":"oFireball","path":"objects/oFireball/oFireball.yy",},"order":32,},
     {"id":{"name":"sprHercWalk","path":"sprites/sprHercWalk/sprHercWalk.yy",},"order":37,},
     {"id":{"name":"sprHercJump","path":"sprites/sprHercJump/sprHercJump.yy",},"order":38,},
+    {"id":{"name":"sprBibilogo","path":"sprites/sprBibilogo/sprBibilogo.yy",},"order":70,},
     {"id":{"name":"LoseScreen","path":"rooms/LoseScreen/LoseScreen.yy",},"order":14,},
     {"id":{"name":"mMenu","path":"sounds/mMenu/mMenu.yy",},"order":0,},
     {"id":{"name":"sprArrow2","path":"sprites/sprArrow2/sprArrow2.yy",},"order":20,},
