@@ -12,14 +12,14 @@ switch(global.current_event){
 	//	break;
 	case(Events.Ares): 
 		break;
-	//case(Events.Artemis): 
-	//	break;
+	case(Events.Artemis): 
+		break;
 	//case(Events.Athena): 
 	//	break;
-	//case(Events.Demeter): 
-	//	break;
-	//case(Events.Dionysus): 
-	//	break;
+	case(Events.Demeter): 
+		break;
+	case(Events.Dionysus): 
+		break;
 	//case(Events.Hades): 
 	//	break;
 	case(Events.Hephaestus): 
