@@ -13,7 +13,7 @@ frames = 60;
 //Enum for all events
 enum Events {
 	None,
-	Aphrodite,
+	//Aphrodite,
 	//Apollo,
 	Ares,
 	Artemis,

@@ -1,14 +1,12 @@
  /// @description Insert description here
 // You can write your code in this editor
 
-if (x < room_width/2) {
-	image_index = 1; //face right
+if (image_index == 0) {
+	x += 8;
 } else {
-	image_index = 0; //face left
+	x -= 8;
 }
 
-/*
 if (x > room_width || x < 0) {
 	instance_destroy(object_index);
 }
-*/
