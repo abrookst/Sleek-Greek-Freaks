@@ -12,7 +12,7 @@ if(touchLeft or touchRight){
 }
 
 nearestEdge = instance_nearest(x,y,oEdge);
-if(abs(x-nearestEdge.x) < 5){
+if(nearestEdge and abs(x-nearestEdge.x) < 5){
 	if x < 700{
 		input_dir = 1;
 	}
